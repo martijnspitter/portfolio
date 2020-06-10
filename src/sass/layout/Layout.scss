@@ -1,0 +1,41 @@
+.container {
+	max-width: 95%;
+	margin: 10rem auto; // center container in the middle of the body
+	background-color: var(--color-grey-light-2);
+	box-shadow: var(--shadow-big-blur);
+
+	min-height: 50rem;
+}
+
+.content-container {
+	display: flex;
+	//width: 90%;
+	justify-content: center;
+	// text-align: center;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 90%;
+}
+
+.gradient {
+	transform: skewY(-7deg);
+	width: 100%;
+	padding: 10rem 5rem;
+	box-shadow: var(--shadow-light);
+	margin-top: 15rem;
+	background-color: var(--color-grey-light-1);
+	flex: 1;
+}
+
+.header-primary {
+	font-size: 3.5rem;
+}
+
+.u-margin-bottom {
+	margin-bottom: 2rem;
+}

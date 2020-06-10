@@ -1,0 +1,54 @@
+@mixin clearfix {
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin center-hoz-vert {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+//media query manager
+/*
+0-600px 			phone
+600-900px 		tablet - portrait mode
+900-1200px 		tablet - landscape mode
+1200-1800px		desktop (all normal styles)
+1800>					large desktops
+
+in this order we will add media queries
+ORDER: Base > typography > general layout > grid > page layout > components
+
+Its best to use em over px in media queries. this is converted to pixels but also respond to the fontsize the users sets in the browser.
+
+
+there probably should be an extra breakpoint at 340 pixels. 
+*/
+
+@mixin media($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 37.5em) {
+			@content;
+		}
+	}
+	@if $breakpoint == tab-port {
+		@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+			@content;
+		}
+	}
+	@if $breakpoint == tab-ls {
+		@media only screen and (min-width: 56.25em) and (max-width: 75em) {
+			@content;
+		}
+	}
+	@if $breakpoint == ld {
+		@media only screen and (min-width: 112.5em) {
+			@content;
+		}
+	}
+}

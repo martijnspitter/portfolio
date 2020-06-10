@@ -1,0 +1,37 @@
+.about-wrap {
+	filter: drop-shadow(0 2rem 5rem rgba(0, 0, 0, .06));
+	width: 100%;
+}
+
+.about {
+	height: 60rem;
+	//width: 100%;
+	padding: 10rem 5rem;
+	margin-top: 7rem;
+	margin-bottom: -10rem;
+
+	background-color: var(--color-grey-light-1);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__picture {
+		flex: 0 0 20%;
+		padding: 3rem;
+
+		&--profile-picture {
+			height: 20rem;
+			width: 20rem;
+			border-radius: 50%;
+		}
+	}
+
+	&__text {
+		flex: 1;
+		padding: 3rem;
+	}
+}

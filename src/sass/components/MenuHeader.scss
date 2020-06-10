@@ -1,0 +1,50 @@
+.header-menu {
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+
+	&__item {
+		font-size: 2rem;
+		font-weight: 300;
+		position: relative;
+		margin: .3rem 0;
+	}
+
+	&__item::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 3px;
+		background-color: var(--color-tertiary);
+		transform: scaleY(0);
+		transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s; //so now we specify both things we want to transform and their duration. Also we add a delay to the width of .2s
+	}
+
+	&__item:hover::before {
+		transform: scaleY(1);
+		width: 100%;
+	}
+
+	&__item:active::before {
+		background-color: var(--color-tertiary-dark);
+	}
+
+	&__link:link,
+	&__link:visited {
+		color: var(--color-grey-dark-3);
+		text-decoration: none;
+		text-transform: uppercase;
+		display: block;
+		padding: 1.5rem 3rem;
+
+		display: flex;
+		align-items: center;
+
+		position: relative; //z-index only works when position is specified.
+		z-index: 20;
+	}
+}
