@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 
 export default class App extends Component {
-	state = { hidden: false };
+	state = { hidden: false, lastScrollTop: 0 };
 
 	constructor(props) {
 		super(props);
@@ -24,23 +24,22 @@ export default class App extends Component {
 	}
 
 	handleScroll(e) {
-		let lastScrollTop = 0;
 		const currentScrollTop = window.scrollY;
-		const upOrDown = lastScrollTop - currentScrollTop;
+		const upOrDown = this.state.lastScrollTop - currentScrollTop;
 
 		// Set the state of hidden depending on scroll position
 		// We only change the state if it needs to be changed
-		if (!this.state.hidden && currentScrollTop > lastScrollTop) {
-			this.setTimeout(() = {this.setState({ hidden: true })});
-		} else if (this.state.hidden) {
-			this.setState({ hidden: false });
+		if (upOrDown < 0) {
+			setTimeout(() => {
+				this.setState({ hidden: true });
+			}, 200);
+		} else if (upOrDown >= 0) {
+			setTimeout(() => {
+				this.setState({ hidden: false });
+			}, 200);
 		}
-		lastScrollTop = currentScrollTop;
 
-		
-		console.log(upOrDown);
-		console.log(currentScrollTop);
-		console.log(lastScrollTop);
+		this.setState({ lastScrollTop: currentScrollTop });
 	}
 
 	render() {

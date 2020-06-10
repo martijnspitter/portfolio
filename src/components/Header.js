@@ -10,7 +10,7 @@ class Header extends Component {
 	handleScroll() {
 		if (this.props.hidden) {
 			return (
-				<header className="header" style={{ transform: 'translateY(-10rem)' }}>
+				<header className="header" style={{ transform: 'translateY(-10rem)', transition: 'transform .2s' }}>
 					<img src={logo} className="header__logo" alt="logo" />
 
 					<MenuHeader />
@@ -18,7 +18,7 @@ class Header extends Component {
 			);
 		} else {
 			return (
-				<header className="header">
+				<header className="header" style={{ transform: 'translateY(0)', transition: 'transform .2s' }}>
 					<img src={logo} className="header__logo" alt="logo" />
 
 					<MenuHeader />
