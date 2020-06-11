@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Cards from './Cards';
 import About from './About';
 import Skills from './Skills';
+import Cv from './Cv';
 
 class Content extends Component {
 	render() {
@@ -10,6 +11,7 @@ class Content extends Component {
 				<About />
 				<Skills />
 				<Cards />
+				<Cv />
 			</div>
 		);
 	}

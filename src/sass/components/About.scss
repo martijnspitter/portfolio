@@ -1,5 +1,5 @@
 .about-wrap {
-	filter: drop-shadow(0 2rem 5rem rgba(0, 0, 0, .06));
+	filter: drop-shadow(0 2rem 2rem rgba(0, 0, 0, .2));
 	width: 100%;
 }
 
@@ -33,5 +33,7 @@
 	&__text {
 		flex: 1;
 		padding: 3rem;
+
+		font-size: 1.6rem;
 	}
 }

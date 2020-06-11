@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Content from './components/Content';
 import Header from './components/Header';
-import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 
 export default class App extends Component {
 	state = { hidden: false, lastScrollTop: 0 };
@@ -13,7 +13,7 @@ export default class App extends Component {
 		this.handleScroll = this.handleScroll.bind(this);
 	}
 
-	componentWillMount() {
+	componentDidMount() {
 		// When this component mounts, begin listening for scroll changes
 		window.addEventListener('scroll', this.handleScroll);
 	}
@@ -48,6 +48,7 @@ export default class App extends Component {
 				<Header hidden={this.state.hidden} />
 				<div className="content-container">
 					<Content />
+					<Footer />
 				</div>
 			</div>
 		);

@@ -3,10 +3,6 @@ import MenuHeader from './MenuHeader';
 import logo from '../images/logo.svg';
 
 class Header extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	handleScroll() {
 		if (this.props.hidden) {
 			return (
@@ -22,6 +18,7 @@ class Header extends Component {
 					<img src={logo} className="header__logo" alt="logo" />
 
 					<MenuHeader />
+					<div className="header__empty">&nbsp;</div>
 				</header>
 			);
 		}

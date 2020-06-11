@@ -11,7 +11,7 @@ class About extends Component {
 							<img src={headshot} alt="My profilepicture" className="about__picture--profile-picture" />
 						</div>
 						<div className="about__text">
-							<h3 className="u-margin-small">Who am I?</h3>
+							<h3 className="heading-tertiary u-margin-bottom">Who am I?</h3>
 							<div className="about__text--text">
 								Hello and welcome on my website. I am Martijn Spitter, 35 years old and untill recently employed in
 								hospitallity. During the corona crisis I took the upportonity

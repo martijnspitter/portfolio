@@ -9,9 +9,8 @@
 
 .content-container {
 	display: flex;
-	//width: 90%;
-	justify-content: center;
-	// text-align: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .content {
@@ -34,8 +33,19 @@
 
 .header-primary {
 	font-size: 3.5rem;
+	text-transform: uppercase;
+}
+
+.heading-tertiary {
+	font-size: 2.5rem;
+	text-transform: uppercase;
 }
 
 .u-margin-bottom {
 	margin-bottom: 2rem;
+}
+
+.wrap {
+	filter: drop-shadow(0 2rem 2rem rgba(0, 0, 0, .2));
+	width: 100%;
 }

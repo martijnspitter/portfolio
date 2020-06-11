@@ -27,6 +27,7 @@
 	&__item:hover::before {
 		transform: scaleY(1);
 		width: 100%;
+		border-radius: 10px;
 	}
 
 	&__item:active::before {
