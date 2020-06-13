@@ -1,17 +1,22 @@
-.projects {
+.cards {
+	-webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+
+	width: 100%;
 	display: flex;
-	justify-content: center;
-	transform: skewY(7deg);
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .card-container {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	transform: skewY(7deg);
-	margin-bottom: 10rem;
-	height: 100%;
-	flex-wrap: wrap;
+	flex-direction: column;
+
+	&__row {
+		display: flex;
+		margin: 2rem 0;
+	}
 }
 
 .card {

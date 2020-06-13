@@ -1,5 +1,4 @@
 .cv {
-	margin: 7rem 0 -10rem 0;
 	position: relative;
 
 	&__container {
@@ -7,7 +6,7 @@
 		justify-content: space-around;
 		align-items: center;
 
-		-webkit-clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+		-webkit-clip-path: polygon(0 16%, 100% 0, 100% 84%, 0 100%);
 		clip-path: polygon(0 16%, 100% 0, 100% 84%, 0 100%);
 
 		background-image: url(./images/background.png);

@@ -2,18 +2,15 @@
 	display: flex;
 	flex-direction: column;
 
-	//align-items: center;
+	-webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+	clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 
 	&__container {
-		transform: skewY(7deg);
 		text-align: center;
 	}
 
 	&__content {
 		margin: 8rem 0;
-		// display: flex;
-		// justify-content: space-between;
-		// align-items: center;
 	}
 
 	&__text {
