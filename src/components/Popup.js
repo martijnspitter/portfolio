@@ -154,7 +154,6 @@ class Popup extends Component {
 }
 
 const mapStateToProps = (state) => {
-	console.log(state.card);
 	return {
 		one: state.one,
 		two: state.two,

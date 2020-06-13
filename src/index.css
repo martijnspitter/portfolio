@@ -65,13 +65,20 @@ there probably should be an extra breakpoint at 340 pixels.
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  overflow-x: hidden;
   min-height: 100vh; }
 
 .container {
@@ -101,6 +108,7 @@ body {
   width: 100%;
   padding: 20rem 5rem;
   box-shadow: var(--shadow-light);
+  margin-top: 15rem;
   flex: 1; }
 
 .heading-primary {
@@ -137,12 +145,15 @@ body {
 .about {
   padding: 10rem 5rem;
   margin-top: 7rem;
+  width: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
   .about__container {
     display: flex;
     align-items: center;
-    padding-bottom: 5rem; }
+    padding-bottom: 5rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
   .about__picture {
     flex: 0 0 20%;
     padding: 3rem; }
@@ -153,6 +164,7 @@ body {
   .about__text {
     flex: 1;
     padding: 3rem;
+    max-width: 100rem;
     font-size: 1.6rem; }
 
 .cards {
@@ -267,66 +279,6 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-  @media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
-    .card {
-      height: auto;
-      border-radius: 3px;
-      background-color: var(--color-grey-light-1);
-      box-shadow: var(--shadow-light); }
-      .card__side {
-        height: auto;
-        font-size: 2rem;
-        position: relative;
-        box-shadow: none; }
-        .card__side--back {
-          transform: rotateY(0);
-          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__details {
-        padding: 1rem 3rem; }
-      .card__cta {
-        position: relative;
-        top: 0%;
-        left: 0%;
-        transform: translate(0);
-        width: 100%;
-        padding: 7em 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 2rem; }
-      .card__price-value {
-        font-size: 6rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .card {
-      height: auto;
-      border-radius: 3px;
-      background-color: var(--color-grey-light-1);
-      box-shadow: var(--shadow-light); }
-      .card__side {
-        height: auto;
-        font-size: 2rem;
-        position: relative;
-        box-shadow: none; }
-        .card__side--back {
-          transform: rotateY(0);
-          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__details {
-        padding: 1rem 3rem; }
-      .card__cta {
-        position: relative;
-        top: 0%;
-        left: 0%;
-        transform: translate(0);
-        width: 100%;
-        padding: 7em 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 2rem; }
-      .card__price-value {
-        font-size: 6rem; } }
 
 .header {
   display: flex;
@@ -394,6 +346,8 @@ body {
 .skills {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%); }
   .skills__container {
@@ -405,7 +359,8 @@ body {
     margin-bottom: 5rem; }
   .skills__div {
     display: flex;
-    justify-content: space-between; }
+    flex-wrap: wrap;
+    width: 100%; }
   .skills__box {
     display: flex;
     flex-direction: column;
@@ -414,7 +369,7 @@ body {
     background-color: var(--color-grey-light-1);
     font-size: 1.5rem;
     padding: 2.5rem;
-    margin: 0 2rem;
+    margin: 2rem 2rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: var(--shadow-light);

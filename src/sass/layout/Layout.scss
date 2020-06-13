@@ -1,6 +1,6 @@
 .container {
 	max-width: 100%;
-
+	//margin: 10rem auto; // center container in the middle of the body
 	padding: 10rem 0;
 	background-image: linear-gradient(to right bottom, rgba($dark-blue, .2), rgba($dark-blue, .8));
 	box-shadow: var(--shadow-big-blur);
@@ -27,10 +27,12 @@
 }
 
 .gradient {
+	//transform: skewY(-7deg);
 	width: 100%;
 	padding: 20rem 5rem;
 	box-shadow: var(--shadow-light);
-
+	margin-top: 15rem;
+	//background-color: var(--color-grey-light-1);
 	flex: 1;
 }
 
