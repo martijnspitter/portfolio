@@ -1,0 +1,92 @@
+.btn {
+	&,
+	&:link,
+	&:visited {
+		/* the : adds a pseudo class, in this case link and visited (standard blue and purple, and accesses a state of an selector */
+		text-transform: uppercase;
+		text-decoration: none; /* removes the line under a link tekst */
+		padding: 1.5rem 4rem;
+		display: inline-block; /* this lets the element behave like a normal block and needs to be applied when using padding */ /* to center this element we need to use text-align on the parent element. Since we set display inline-block it is treated as text and text-align shoult work */
+		border-radius: 10rem;
+		transition: all .2s;
+		position: relative; /* again to add reference for the ::after we make this position relative */
+		font-size: 1.6rem;
+
+		border: none;
+		cursor: pointer;
+	}
+	&--white {
+		background-color: $color-grey-light-1;
+		color: $color-grey-dark-3;
+		&::after {
+			background-color: $color-grey-light-1;
+		}
+	}
+	&--green {
+		background-color: $color-primary;
+		color: $color-grey-light-1;
+		&::after {
+			background-color: $color-primary;
+		}
+	}
+
+	&:hover {
+		transform: translateY(-3px); /* y axis goes top down so to move up we use negative values */
+		box-shadow: $shadow-big-blur;
+		&::after {
+			/* so now we specifiy the onHover on the after virtual element which is behind the btn element. And on hover we want it to do something */
+			transform: scaleX(1.4) scaleY(1.6); /* here we make it bigger. To actually animate it we need to use transition on the initial state so in this case btn::after. */
+			opacity: 0;
+			/* so on hover we want the end state to be invisible. Transition sets that to happen in .4 seconds. */
+		}
+	}
+
+	&:active,
+	&:focus {
+		//we place the focus here to give it the same style as active when focussed for accesability and remove the outline
+		outline: none;
+		/* active is the click state of in this case the button (so acts like an onClick in React) */
+		transform: translateY(-1px);
+		box-shadow: $shadow-big-blur; /* box-shadow adds shadow on the x and y axis. then the third value is the amount of blur and the last is the color */
+	}
+	&::after {
+		/* pseudo class after adds an virtual element after the element we use it on (note the dubble ::) */
+		content: ""; /* we have to specify content even if its empty */
+		display: inline-block; /* we also have to specify this */
+		height: 100%;
+		width: 100%; /* height and width to 100% makes the virtual element exactly the same sice as the element its based on */
+		border-radius: 10rem;
+		position: absolute; /* position relative to the btn element so add position: relative to parent element */
+		top: 0;
+		left: 0;
+		z-index: -1; /* this actually places it behind the btn elemement */
+		transition: all .4s; /* we want all the things happening in .4seconds that we declare in the btn:hover::after state */
+	}
+	&--animated {
+		animation: moveInBottom .5s ease-out .75s; /* last value sets the delay */
+		animation-fill-mode: backwards; /* this will automaticly apply the 0% states to the button when it starts. So the button will be invisible till the animation runs */
+	}
+}
+
+.btn-text {
+	&:link,
+	&:visited {
+		color: $color-primary;
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 1px solid $color-primary;
+		padding: 3px;
+		font-size: 1.6rem;
+		transition: all .2s;
+	}
+	&:hover {
+		background-color: $color-primary;
+		color: $color-grey-light-1;
+		box-shadow: $shadow-big-blur;
+		transform: translateY(-2px);
+	}
+	&:active {
+		box-shadow: $shadow-big-blur;
+		transform: translateY(0);
+	}
+}

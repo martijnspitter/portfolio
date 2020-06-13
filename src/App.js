@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
-import Content from './components/Content';
+import { Router, Route, Switch } from 'react-router-dom';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Popup from './components/Popup';
+import Cards from './components/Cards';
+import About from './components/About';
+import Skills from './components/Skills';
+import Cv from './components/Cv';
+import history from './history';
 
 export default class App extends Component {
 	state = { hidden: false, lastScrollTop: 0 };
@@ -45,11 +52,22 @@ export default class App extends Component {
 	render() {
 		return (
 			<div className="container">
+				<Popup />
 				<Header hidden={this.state.hidden} />
-				<div className="content-container">
-					<Content />
-					<Footer />
-				</div>
+				<Router history={history}>
+					<div className="content-container">
+						<Switch>
+							<Route path="/#cards" />
+						</Switch>
+						<About />
+						<Skills />
+
+						<Cards />
+
+						<Cv />
+						<Footer />
+					</div>
+				</Router>
 			</div>
 		);
 	}

@@ -19,7 +19,7 @@
 		left: 0;
 		height: 100%;
 		width: 3px;
-		background-color: var(--color-tertiary);
+		background-color: var(--dark-blue);
 		transform: scaleY(0);
 		transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s; //so now we specify both things we want to transform and their duration. Also we add a delay to the width of .2s
 	}
@@ -27,16 +27,16 @@
 	&__item:hover::before {
 		transform: scaleY(1);
 		width: 100%;
-		border-radius: 10px;
+		border-radius: 40px;
 	}
 
 	&__item:active::before {
-		background-color: var(--color-tertiary-dark);
+		background-color: var(--charcoal);
 	}
 
 	&__link:link,
 	&__link:visited {
-		color: var(--color-grey-dark-3);
+		color: var(--yellow);
 		text-decoration: none;
 		text-transform: uppercase;
 		display: block;

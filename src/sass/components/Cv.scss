@@ -33,7 +33,7 @@
 		&--last {
 			left: 5rem;
 			font-size: 3.5rem;
-			color: var(--color-primary-light);
+			color: var(--yellow);
 
 			position: absolute;
 			bottom: 2.7rem;
@@ -47,12 +47,13 @@
 
 	&__right-side {
 		position: absolute;
-		left: 55rem;
+		left: 50rem;
+		top: 6rem;
 	}
 
 	&__experience {
 		font-size: 1.6rem;
-
+		margin-right: 4rem;
 		border-bottom: var(--line);
 	}
 
@@ -61,6 +62,7 @@
 		border-bottom: var(--line);
 		padding-bottom: 4rem;
 		margin-bottom: 4rem;
+		margin-right: 4rem;
 		text-align: right;
 	}
 
@@ -88,11 +90,15 @@
 [class^="col-"] {
 	float: left;
 
-	&:not(:last-child) {
-		margin-right: 4rem;
+	&:first-child {
+		margin-right: 2rem;
 	}
 }
 
 .col-1-of-3 {
+	width: 25rem;
+}
+
+.col-2-of-3 {
 	width: 20rem;
 }

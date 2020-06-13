@@ -21,7 +21,7 @@
 	position: relative;
 	height: 52rem; //this prevents this elements hight from colapsing when using position absolute
 	width: 30rem;
-	margin: 6rem 0;
+	margin: -3rem 3rem 6rem 3rem;
 
 	&__side {
 		height: 52rem;
@@ -45,13 +45,13 @@
 			transform: rotateY(180deg);
 
 			&-1 {
-				background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+				background-image: linear-gradient(to right bottom, rgba($yellow, .3), var(--yellow));
 			}
 			&-2 {
-				background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark));
+				background-image: linear-gradient(to right bottom, rgba($light-blue, .3), var(--light-blue));
 			}
 			&-3 {
-				background-image: linear-gradient(to right bottom, var(--color-tertiary-light), var(--color-tertiary-dark));
+				background-image: linear-gradient(to right bottom, rgba($orange, .3), var(--orange));
 			}
 		}
 	}
@@ -75,18 +75,16 @@
 		border-top-right-radius: 3px; //this adds the rounded corners again after clip-path
 
 		&--1 {
-			background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark)),
-				url(images/webdev.jpg);
+			background-image: linear-gradient(to right bottom, rgba($yellow, .3), var(--yellow)), url(images/webdev.jpg);
 		}
 
 		&--2 {
-			background-image: linear-gradient(to right bottom, var(--color-secondary-light), var(--color-secondary-dark)),
+			background-image: linear-gradient(to right bottom, rgba($light-blue, .3), var(--light-blue)),
 				url(images/webdev.jpg);
 		}
 
 		&--3 {
-			background-image: linear-gradient(to right bottom, var(--color-tertiary-light), var(--color-tertiary-dark)),
-				url(images/webdev.jpg);
+			background-image: linear-gradient(to right bottom, rgba($orange, .3), var(--orange)), url(images/webdev.jpg);
 		}
 	}
 	&__heading {
@@ -96,9 +94,9 @@
 		text-align: right;
 		color: var(--color-grey-light-1);
 		position: absolute;
-		top: 12rem;
+		top: 15rem;
 		right: 2rem;
-		width: 75%;
+		width: 90%;
 	}
 
 	&__heading-span {
@@ -106,25 +104,13 @@
 		-webkit-box-decoration-break: clone; //with this the one span gets treated as two seperate lines. bad support so use webkit
 		box-decoration-break: clone;
 		&--1 {
-			background-image: linear-gradient(
-				to right bottom,
-				rgba(var(--color-primary-light), .85),
-				rgba(var(--color-primary-dark), .85)
-			);
+			background-image: linear-gradient(to right bottom, rgba($yellow, .3), rgba($yellow, .85));
 		}
 		&--2 {
-			background-image: linear-gradient(
-				to right bottom,
-				rgba(var(--color-secondary-light), .85),
-				rgba(var(--color-secondary-dark), .85)
-			);
+			background-image: linear-gradient(to right bottom, rgba($light-blue, .3), rgba($light-blue, .85));
 		}
 		&--3 {
-			background-image: linear-gradient(
-				to right bottom,
-				rgba(var(--color-tertiary-light), .85),
-				rgba(var(--color-tertiary-dark), .85)
-			);
+			background-image: linear-gradient(to right bottom, rgba($orange, .3), rgba($orange, .85));
 		}
 	}
 

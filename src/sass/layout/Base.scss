@@ -13,7 +13,7 @@
 html {
 	box-sizing: border-box; //working with border-box
 	font-size: 62.5%; //1rem=10px 10px/16 =62,5%
-	background-color: var(--color-tertiary-light);
+	//background-color: var(--light-blue);
 }
 
 body {
@@ -27,8 +27,4 @@ body {
 	//background-color: var(--color-grey-light-1);
 
 	min-height: 100vh;
-}
-
-.u-margin-bottom-small {
-	margin-bottom: 1rem;
 }

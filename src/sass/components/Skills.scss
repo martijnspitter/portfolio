@@ -27,6 +27,10 @@
 	}
 
 	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 26rem;
 		background-color: var(--color-grey-light-1);
 		font-size: 1.5rem;
 		padding: 2.5rem;
@@ -40,10 +44,12 @@
 			height: 10rem;
 			width: 10rem;
 			margin-bottom: .5rem;
-			display: inline-block;
-			background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-			-webkit-background-clip: text;
-			color: transparent;
+		}
+
+		&--wrap {
+			height: 20rem;
+			display: flex;
+			align-items: center;
 		}
 
 		&--text {

@@ -6,8 +6,8 @@ import github from '../images/github-logo.png';
 export default class Footer extends Component {
 	render() {
 		return (
-			<div className="footer-wrap">
-				<footer className="footer">
+			<div className="wrap">
+				<footer className="footer background" id="contact">
 					<img src={logo} className="footer__logo" alt="logo" />
 					<div className="footer__container">
 						<div className="contact">
@@ -17,13 +17,19 @@ export default class Footer extends Component {
 								<a href="mailto:martijnspitter@gmail.com">email</a> me.
 							</p>
 							<div className="contact__logos">
-								<a target="_blank" href="http://www.linkedin.com/in/martijnspitter" className="contact__logos-link">
+								<a
+									target="_blank"
+									href="http://www.linkedin.com/in/martijnspitter"
+									rel="noopener noreferrer"
+									className="contact__logos-link"
+								>
 									<img src={linkedin} alt="linkedin" className="contact__logos--linkedin" />
 								</a>
 								<a
 									target="_blank"
 									href="https://github.com/martijnspitter?tab=repositories"
 									className="contact__logos-link"
+									rel="noopener noreferrer"
 								>
 									<img src={github} alt="github" className="contact__logos--github" />
 								</a>
