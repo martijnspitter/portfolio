@@ -1,31 +1,41 @@
 .about {
 	width: 100%;
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
 
 	@media only screen and (max-width: 81.88em) {
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 	}
 
-	@media only screen and (max-width: 64em) {
+	@media only screen and (max-width: 68.75em) {
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
 	}
 
-	@media only screen and (max-width: 56.88em) {
+	@media only screen and (max-width: 64em) {
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
 	}
 
-	@media only screen and (max-width: 50em) {
+	@media only screen and (max-width: 56.88em) {
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 	}
 
+	@media only screen and (max-width: 50em) {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+	}
+
 	@media only screen and (max-width: 37.5em) {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+	}
+
+	@media only screen and (max-width: 33.75em) {
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
 	}
 
 	@media only screen and (max-width: 28em) {

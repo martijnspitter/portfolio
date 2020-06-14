@@ -6,11 +6,11 @@
 
 	height: 100%;
 	width: 100%;
-
+	margin-top: -8rem;
 	margin-bottom: 7rem;
 
-	-webkit-clip-path: polygon(0 32%, 100% 0, 100% 100%, 0 100%);
-	clip-path: polygon(0 32%, 100% 0, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 36%, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 36%, 100% 0, 100% 100%, 0 100%);
 
 	@media only screen and (max-width: 81.88em) {
 		-webkit-clip-path: polygon(0 28%, 100% 0, 100% 100%, 0 100%);
@@ -23,13 +23,14 @@
 	}
 
 	@media only screen and (max-width: 33.75em) {
-		-webkit-clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 100%);
-		clip-path: polygon(0 21%, 100% 0, 100% 100%, 0 100%);
+		-webkit-clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 100%);
+		clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 100%);
 	}
 
 	@media only screen and (max-width: 28em) {
-		-webkit-clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
-		clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+		-webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+		clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+		margin-top: 0;
 	}
 
 	&__logo {

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 import trillo from '../images/trillo.gif';
-import jammming from '../images/jammming.gif';
-import natours from '../images/natours.gif';
+import jammming from '../images/jammming.mp4';
+import natours from '../images/natours.mp4';
 import videos from '../images/videos.gif';
 import streams from '../images/streams.gif';
 import ravanous from '../images/ravanous.gif';
@@ -45,7 +45,7 @@ class Popup extends Component {
 			return (
 				<div className="popup__content">
 					<div className="popup__left">
-						<img src={jammming} alt={this.props.two.title} />
+						<video src={jammming} alt={this.props.two.title} autoPlay loop muted />
 					</div>
 					<div className="popup__right">
 						<a href="#cards" className="popup__close">
@@ -106,7 +106,7 @@ class Popup extends Component {
 			return (
 				<div className="popup__content">
 					<div className="popup__left">
-						<img src={natours} alt={this.props.five.title} />
+						<video src={natours} alt={this.props.five.title} autoPlay loop muted />
 					</div>
 					<div className="popup__right">
 						<a href="#cards" className="popup__close">
