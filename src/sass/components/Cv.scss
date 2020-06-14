@@ -1,7 +1,7 @@
 .cv {
 	position: relative;
 	height: 100%;
-	margin-top: -8rem;
+	margin-top: -4rem;
 
 	&__container {
 		display: flex;
@@ -10,12 +10,12 @@
 
 		width: 100%;
 
-		-webkit-clip-path: polygon(0 16%, 100% 0, 100% 84%, 0 100%);
-		clip-path: polygon(0 16%, 100% 0, 100% 84%, 0 100%);
+		-webkit-clip-path: polygon(0 13%, 100% 0, 100% 84%, 0 100%);
+		clip-path: polygon(0 13%, 100% 0, 100% 84%, 0 100%);
 
 		@media only screen and (max-width: 85.44em) {
-			-webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
-			clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
+			-webkit-clip-path: polygon(0 11%, 100% 0, 100% 86%, 0 100%);
+			clip-path: polygon(0 11%, 100% 0, 100% 86%, 0 100%);
 		}
 
 		@media only screen and (max-width: 81.88em) {
@@ -43,7 +43,7 @@
 			clip-path: polygon(0 3.8%, 100% 0, 100% 96.2%, 0 100%);
 			flex-direction: column;
 
-			margin-top: 8rem;
+			margin-top: 4rem;
 		}
 	}
 
