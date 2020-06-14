@@ -225,7 +225,7 @@ body {
   @media only screen and (max-width: 56.88em) {
     .cards {
       -webkit-clip-path: polygon(0 3.7%, 100% 0, 100% 96.3%, 0 100%);
-      clip-path: polygon(0 3.7%, 100% 0, 100% 96.3%, 0 100%); } }
+      clip-path: polygon(0 3.5%, 100% 0, 100% 96.5%, 0 100%); } }
   @media only screen and (max-width: 46.06em) {
     .cards {
       -webkit-clip-path: polygon(0 3.7%, 100% 0, 100% 96.8%, 0 100%);
@@ -236,8 +236,10 @@ body {
       clip-path: polygon(0 1.4%, 100% 0, 100% 98.6%, 0 100%); } }
 
 .projects {
-  padding-top: 8rem;
   padding-bottom: 2rem; }
+  @media only screen and (max-width: 56.88em) {
+    .projects {
+      padding-top: 2rem; } }
 
 .card-container {
   display: flex;
@@ -520,8 +522,6 @@ body {
       clip-path: polygon(0 2.5%, 100% 0, 100% 97.5%, 0 100%); } }
   .skills__container {
     text-align: center; }
-    .skills__container h1 {
-      padding-top: 8rem; }
   .skills__text {
     font-size: 1.6rem; }
   .skills__div {

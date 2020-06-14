@@ -15,7 +15,7 @@
 
 	@media only screen and (max-width: 56.88em) {
 		-webkit-clip-path: polygon(0 3.7%, 100% 0, 100% 96.3%, 0 100%);
-		clip-path: polygon(0 3.7%, 100% 0, 100% 96.3%, 0 100%);
+		clip-path: polygon(0 3.5%, 100% 0, 100% 96.5%, 0 100%);
 	}
 
 	@media only screen and (max-width: 46.06em) {
@@ -30,8 +30,10 @@
 }
 
 .projects {
-	padding-top: 8rem;
 	padding-bottom: 2rem;
+	@media only screen and (max-width: 56.88em) {
+		padding-top: 2rem;
+	}
 }
 
 .card-container {

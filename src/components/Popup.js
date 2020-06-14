@@ -32,10 +32,9 @@ class Popup extends Component {
 						</a>
 						<h3 className="heading-tertiary u-margin-bottom-small">{this.props.one.title}</h3>
 						<p className="popup__text">{this.props.one.text}</p>
-						<a href="#cards">
-							<a href={this.props.one.btnsource} target="_blank" rel="noopener noreferrer" className="btn btn--green">
-								SOURCE CODE
-							</a>
+
+						<a href={this.props.one.btnsource} target="_blank" rel="noopener noreferrer" className="btn btn--green">
+							SOURCE CODE
 						</a>
 					</div>
 				</div>
