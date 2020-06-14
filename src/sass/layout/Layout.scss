@@ -8,6 +8,10 @@
 	min-height: 50rem;
 	display: flex;
 	justify-content: center;
+
+	@media only screen and (max-width: 28em) {
+		padding: 5rem 0;
+	}
 }
 
 .content-container {
@@ -27,13 +31,18 @@
 }
 
 .gradient {
-	//transform: skewY(-7deg);
 	width: 100%;
 	padding: 20rem 5rem;
 	box-shadow: var(--shadow-light);
-	margin-top: 15rem;
-	//background-color: var(--color-grey-light-1);
+
 	flex: 1;
+	@media only screen and (max-width: 64em) {
+		padding: 15rem 5rem;
+	}
+
+	@media only screen and (max-width: 28em) {
+		padding: 5rem 5rem;
+	}
 }
 
 .heading-primary {

@@ -13,38 +13,82 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: all .3s;
+	overflow-y: scroll;
 
 	&__content {
 		width: 75%;
-		height: 60%;
+		height: auto;
 		background-color: $color-grey-light-1;
 		box-shadow: $shadow-light;
 		@include center-hoz-vert;
 		border-radius: 3px;
+		overflow-y: scroll;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		overflow: hidden;
+		flex-wrap: wrap;
+
 		opacity: 0;
 		transform: translate(-50%, -50%) scale(0);
 		transition: all .5s .2s; //adding a delay here
+
+		@media only screen and (max-width: 57.44em) {
+			width: 90%;
+		}
+
+		@media only screen and (max-width: 40.94em) {
+			flex-wrap: wrap-reverse;
+			margin: 4rem 0;
+		}
 	}
 
 	&__left {
-		width: 50%;
-		padding: 3rem 5rem;
-		margin-right: 6rem;
+		width: 45rem;
+		display: flex;
+		justify-content: center;
+
+		@media only screen and (max-width: 74.13em) {
+			width: 40rem;
+		}
+		@media only screen and (max-width: 65.75em) {
+			width: 35rem;
+		}
+
+		@media only screen and (max-width: 57.44em) {
+			width: 30rem;
+		}
+
+		@media only screen and (max-width: 40.94em) {
+			width: 40rem;
+			margin-top: 4rem;
+		}
+
+		& img {
+			margin: 2rem;
+			width: 100%;
+		}
 	}
 
 	&__right {
-		width: 50%;
-
+		width: 40rem;
+		margin: 2rem;
 		padding: 3rem 5rem;
-	}
 
-	&__img {
-		display: block;
-		width: 100%;
+		@media only screen and (max-width: 74.13em) {
+			width: 35rem;
+		}
+		@media only screen and (max-width: 65.75em) {
+			width: 30rem;
+			padding: 1rem 1rem;
+		}
+		@media only screen and (max-width: 57.44em) {
+			width: 25rem;
+			padding: 1rem 1rem;
+		}
+		@media only screen and (max-width: 40.94em) {
+			width: 40rem;
+		}
 	}
 
 	&__text {

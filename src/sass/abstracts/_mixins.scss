@@ -24,10 +24,7 @@
 in this order we will add media queries
 ORDER: Base > typography > general layout > grid > page layout > components
 
-Its best to use em over px in media queries. this is converted to pixels but also respond to the fontsize the users sets in the browser.
 
-
-there probably should be an extra breakpoint at 340 pixels. 
 */
 
 @mixin media($breakpoint) {

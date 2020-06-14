@@ -7,15 +7,45 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
+
+	@media only screen and (max-width: 81.88em) {
+		-webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+		clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+	}
+
+	@media only screen and (max-width: 56.88em) {
+		-webkit-clip-path: polygon(0 3.7%, 100% 0, 100% 96.3%, 0 100%);
+		clip-path: polygon(0 3.7%, 100% 0, 100% 96.3%, 0 100%);
+	}
+
+	@media only screen and (max-width: 46.06em) {
+		-webkit-clip-path: polygon(0 3.7%, 100% 0, 100% 96.8%, 0 100%);
+		clip-path: polygon(0 3.7%, 100% 0, 100% 96.8%, 0 100%);
+	}
+
+	@media only screen and (max-width: 28em) {
+		-webkit-clip-path: polygon(0 1.4%, 100% 0, 100% 98.6%, 0 100%);
+		clip-path: polygon(0 1.4%, 100% 0, 100% 98.6%, 0 100%);
+	}
+}
+
+.projects {
+	padding-top: 8rem;
+	padding-bottom: 2rem;
 }
 
 .card-container {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+
+	padding-bottom: 2rem;
 
 	&__row {
 		display: flex;
 		margin: 2rem 0;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 }
 
@@ -27,6 +57,10 @@
 	height: 52rem; //this prevents this elements hight from colapsing when using position absolute
 	width: 30rem;
 	margin: -3rem 3rem 6rem 3rem;
+
+	@include media(tab-port) {
+		width: 50rem;
+	}
 
 	&__side {
 		height: 52rem;
@@ -163,95 +197,95 @@
 		font-weight: 100;
 	}
 
-	// @include media(tab-port) {
-	// 	height: auto;
-	// 	border-radius: 3px;
-	// 	background-color: var(--color-grey-light-1);
-	// 	box-shadow: var(--shadow-light);
+	@include media(tab-port) {
+		height: auto;
+		border-radius: 3px;
+		background-color: var(--color-grey-light-1);
+		box-shadow: var(--shadow-light);
 
-	// 	&__side {
-	// 		height: auto;
-	// 		font-size: 2rem;
-	// 		position: relative;
-	// 		box-shadow: none;
+		&__side {
+			height: auto;
+			font-size: 2rem;
+			position: relative;
+			box-shadow: none;
 
-	// 		&--back {
-	// 			transform: rotateY(0);
-	// 			-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-	// 			clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-	// 		}
-	// 	}
+			&--back {
+				transform: rotateY(0);
+				-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+				clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+			}
+		}
 
-	// 	&:hover &__side--front {
-	// 		transform: rotateY(0);
-	// 	}
+		&:hover &__side--front {
+			transform: rotateY(0);
+		}
 
-	// 	&__details {
-	// 		padding: 1rem 3rem;
-	// 	}
+		&__details {
+			padding: 1rem 3rem;
+		}
 
-	// 	//BACK SIDE STYLING
-	// 	&__cta {
-	// 		position: relative;
-	// 		top: 0%;
-	// 		left: 0%;
-	// 		transform: translate(0);
-	// 		width: 100%;
-	// 		padding: 7em 4rem 4rem 4rem;
-	// 	}
+		//BACK SIDE STYLING
+		&__cta {
+			position: relative;
+			top: 0%;
+			left: 0%;
+			transform: translate(0);
+			width: 100%;
+			padding: 3rem 2rem;
+		}
 
-	// 	&__price-box {
-	// 		margin-bottom: 2rem;
-	// 	}
+		&__price-box {
+			margin-bottom: 2rem;
+		}
 
-	// 	&__price-value {
-	// 		font-size: 6rem;
-	// 	}
-	// }
+		&__price-value {
+			font-size: 6rem;
+		}
+	}
 
-	// @include media(phone) {
-	// 	height: auto;
-	// 	border-radius: 3px;
-	// 	background-color: var(--color-grey-light-1);
-	// 	box-shadow: var(--shadow-light);
+	@include media(phone) {
+		height: auto;
+		border-radius: 3px;
+		background-color: var(--color-grey-light-1);
+		box-shadow: var(--shadow-light);
 
-	// 	&__side {
-	// 		height: auto;
-	// 		font-size: 2rem;
-	// 		position: relative;
-	// 		box-shadow: none;
+		&__side {
+			height: auto;
+			font-size: 2rem;
+			position: relative;
+			box-shadow: none;
 
-	// 		&--back {
-	// 			transform: rotateY(0);
-	// 			-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-	// 			clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
-	// 		}
-	// 	}
+			&--back {
+				transform: rotateY(0);
+				-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+				clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+			}
+		}
 
-	// 	&:hover &__side--front {
-	// 		transform: rotateY(0);
-	// 	}
+		&:hover &__side--front {
+			transform: rotateY(0);
+		}
 
-	// 	&__details {
-	// 		padding: 1rem 3rem;
-	// 	}
+		&__details {
+			padding: 1rem 3rem;
+		}
 
-	// 	//BACK SIDE STYLING
-	// 	&__cta {
-	// 		position: relative;
-	// 		top: 0%;
-	// 		left: 0%;
-	// 		transform: translate(0);
-	// 		width: 100%;
-	// 		padding: 7em 4rem 4rem 4rem;
-	// 	}
+		//BACK SIDE STYLING
+		&__cta {
+			position: relative;
+			top: 0%;
+			left: 0%;
+			transform: translate(0);
+			width: 100%;
+			padding: 3rem 2rem;
+		}
 
-	// 	&__price-box {
-	// 		margin-bottom: 2rem;
-	// 	}
+		&__price-box {
+			margin-bottom: 2rem;
+		}
 
-	// 	&__price-value {
-	// 		font-size: 6rem;
-	// 	}
-	// }
+		&__price-value {
+			font-size: 6rem;
+		}
+	}
 }

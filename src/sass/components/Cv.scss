@@ -1,5 +1,6 @@
 .cv {
 	position: relative;
+	height: 100%;
 
 	&__container {
 		display: flex;
@@ -8,17 +9,67 @@
 
 		-webkit-clip-path: polygon(0 16%, 100% 0, 100% 84%, 0 100%);
 		clip-path: polygon(0 16%, 100% 0, 100% 84%, 0 100%);
-
-		background-image: url(./images/background.png);
-		background-size: cover;
-		height: 100rem;
 		width: 100%;
+
+		@media only screen and (max-width: 85.44em) {
+			-webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
+			clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
+		}
+
+		@media only screen and (max-width: 81.88em) {
+			-webkit-clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
+			clip-path: polygon(0 12%, 100% 0, 100% 88%, 0 100%);
+		}
+
+		@media only screen and (max-width: 56.88em) {
+			-webkit-clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%);
+			clip-path: polygon(0 11%, 100% 0, 100% 89%, 0 100%);
+		}
+
+		@media only screen and (max-width: 46.06em) {
+			-webkit-clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
+			clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
+		}
+
+		@media only screen and (max-width: 28em) {
+			-webkit-clip-path: polygon(0 3.2%, 100% 0, 100% 96.8%, 0 100%);
+			clip-path: polygon(0 3.2%, 100% 0, 100% 96.8%, 0 100%);
+			flex-direction: column;
+		}
+	}
+
+	&__left-side {
+		width: 35%;
+		height: 100%;
+
+		@media only screen and (max-width: 28em) {
+			width: 100%;
+			height: 5%;
+			align-self: center;
+			margin-top: 6rem;
+		}
+	}
+
+	&__img {
+		width: 100rem;
+		height: 100%;
+		margin-left: -25rem;
+
+		@media only screen and (max-width: 46.06em) {
+			margin-left: -35rem;
+		}
+
+		@media only screen and (max-width: 28em) {
+			visibility: hidden;
+			width: 0;
+			height: 0;
+		}
 	}
 
 	&__name {
 		&--first {
 			position: absolute;
-			bottom: 2rem;
+			bottom: 6rem;
 			left: 0;
 
 			font-size: 5rem;
@@ -27,52 +78,95 @@
 			text-transform: uppercase;
 			writing-mode: vertical-lr;
 			text-orientation: upright;
+
+			@media only screen and (max-width: 28em) {
+				position: unset;
+				text-transform: uppercase;
+				writing-mode: inherit;
+				text-orientation: inherit;
+				text-align: center;
+				color: var(--yellow);
+			}
 		}
 
 		&--last {
-			left: 5rem;
 			font-size: 3.5rem;
 			color: var(--yellow);
 
 			position: absolute;
-			bottom: 2.7rem;
+			bottom: 6.7rem;
 			left: 8rem;
 
 			text-transform: uppercase;
 			writing-mode: vertical-lr;
 			text-orientation: upright;
+
+			@media only screen and (max-width: 28em) {
+				position: inherit;
+				text-transform: uppercase;
+				writing-mode: inherit;
+				text-orientation: inherit;
+				text-align: center;
+			}
 		}
 	}
 
 	&__right-side {
-		position: absolute;
-		left: 50rem;
-		top: 6rem;
-	}
+		width: 100%;
+		height: 100%;
 
-	&__experience {
-		font-size: 1.6rem;
-		margin-right: 4rem;
-		border-bottom: var(--line);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		margin: 8rem 0;
+		padding: 8rem 0;
+
+		@media only screen and (max-width: 28em) {
+			background-image: unset;
+			height: 100%;
+			margin: 2rem 0;
+			padding: 0;
+		}
 	}
 
 	&__skills {
 		font-size: 1.6rem;
 		border-bottom: var(--line);
 		padding-bottom: 4rem;
-		margin-bottom: 4rem;
-		margin-right: 4rem;
+		margin: 0 4rem 4rem 4rem;
 		text-align: right;
+		max-width: 80rem;
+
+		@media only screen and (max-width: 28em) {
+			text-align: left;
+		}
+	}
+
+	&__experience {
+		display: flex;
+		flex-direction: column;
+
+		font-size: 1.6rem;
+		padding: 0 4rem;
+		border-bottom: var(--line);
+		max-width: 100rem;
 	}
 
 	&__education {
+		display: flex;
+		flex-direction: column;
 		font-size: 1.6rem;
 		padding-top: 4rem;
+		margin: 0 4rem;
 	}
 }
 
 .row {
-	max-width: 100rem;
+	display: flex;
+
+	flex-wrap: wrap;
 	margin: 0 auto 2rem auto;
 
 	&:last-child {

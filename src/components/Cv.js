@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
+import headshot from '../images/headshot.jpg';
 
 export default class cv extends Component {
 	render() {
 		return (
 			<div className="cv wrap " id="cv">
-				<div className="cv__container">
-					<h1 className="cv__name--first">Martijn</h1>
-					<h1 className="cv__name--last">Spitter</h1>
+				<div className="cv__container background">
+					<div className="cv__left-side">
+						<img src={headshot} alt="profilepicture" className="cv__img" />
+						<h1 className="cv__name--first">Martijn</h1>
+						<h1 className="cv__name--last">Spitter</h1>
+					</div>
 
-					<div className="cv__right-side">
+					<div className="cv__right-side background">
 						<div className="cv__skills">
 							<h1 className="heading-primary u-margin-bottom">CV</h1>
 							Because I’m working towards a new career as a developer <br /> I have no relevant experience. But that

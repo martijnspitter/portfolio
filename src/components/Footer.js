@@ -11,7 +11,7 @@ export default class Footer extends Component {
 					<img src={logo} className="footer__logo" alt="logo" />
 					<div className="footer__container">
 						<div className="contact">
-							<h3 className="heading-tertiary u-margin-bottom">Thank you for your time!</h3>
+							<h3 className="heading-tertiary">Thank you for your time!</h3>
 							<p className="contact__text">
 								If you would like to contact me you can call me on <br /> +31 (0)6 48260886 or{' '}
 								<a href="mailto:martijnspitter@gmail.com">email</a> me.
