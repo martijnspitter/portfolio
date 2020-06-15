@@ -14,7 +14,7 @@ export default class Footer extends Component {
 							<h3 className="heading-tertiary">Thank you for your time!</h3>
 							<p className="contact__text">
 								If you would like to contact me you can call me on <br /> +31 (0)6 48260886 or{' '}
-								<a href="mailto:martijnspitter@gmail.com">email</a> me.
+								<a href="mailto:info@martijnspitter.nl">email</a> me.
 							</p>
 							<div className="contact__logos">
 								<a
@@ -37,7 +37,7 @@ export default class Footer extends Component {
 						</div>
 						<div className="disclaimer">
 							Copyright © Martijn Spitter. You are 100% allowed to use this website's design for personal and commercial
-							use, but not to claim it as your own design. A credit to the original owner Martijn Spitter is ofcourse
+							use, but not to claim it as your own design. A credit to the original owner Martijn Spitter is of course
 							highly appreciated!
 						</div>
 					</div>

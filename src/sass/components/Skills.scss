@@ -6,23 +6,23 @@
 
 	margin-top: -4rem;
 
-	-webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-	clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+	-webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
+	clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
 
 	@media only screen and (max-width: 91.25em) {
-		-webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-		clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+		-webkit-clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
+		clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
 	}
 
 	@media only screen and (max-width: 46.06em) {
-		-webkit-clip-path: polygon(0 7%, 100% 0, 100% 93%, 0 100%);
-		clip-path: polygon(0 7%, 100% 0, 100% 93%, 0 100%);
+		-webkit-clip-path: polygon(0 5.5%, 100% 0, 100% 93%, 0 100%);
+		clip-path: polygon(0 5.5%, 100% 0, 100% 93%, 0 100%);
 	}
 
 	@media only screen and (max-width: 28em) {
-		-webkit-clip-path: polygon(0 2.5%, 100% 0, 100% 97.5%, 0 100%);
-		clip-path: polygon(0 2.5%, 100% 0, 100% 97.5%, 0 100%);
-		margin-top: 0;
+		-webkit-clip-path: none;
+		clip-path: none;
+		margin-top: 4rem;
 	}
 
 	&__container {

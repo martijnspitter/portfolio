@@ -39,22 +39,17 @@
 	}
 
 	@media only screen and (max-width: 28em) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 95.5%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 95.5%, 0 100%);
-	}
-
-	@media only screen and (max-width: 22.5em) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 96.2%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 96.2%, 0 100%);
+		-webkit-clip-path: none;
+		clip-path: none;
 	}
 
 	&__container {
 		display: flex;
 		align-items: center;
-		padding-bottom: 5rem;
+
 		justify-content: space-evenly;
 		flex-wrap: wrap;
-		padding: 5rem 0 20rem 0;
+		padding: 5rem 0 15rem 0;
 
 		@media only screen and (max-width: 50em) {
 			flex-direction: column;
@@ -68,9 +63,8 @@
 	}
 
 	&__picture {
-		//flex: 0 0 20%;
 		padding: 3rem;
-		margin: 3rem 3rem 0 3rem;
+		margin: 3rem 1rem 0 1rem;
 
 		&--profile-picture {
 			height: 20rem;
@@ -82,7 +76,7 @@
 	&__text {
 		flex: 1;
 		padding: 3rem;
-		margin: 0 3rem 3rem 3rem;
+		margin: 0 0.5rem 3rem 0.5rem;
 		max-width: 100rem;
 		min-width: 25rem;
 		font-size: 1.6rem;

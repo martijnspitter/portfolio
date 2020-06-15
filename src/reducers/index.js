@@ -12,7 +12,7 @@ const cardOneReducer = () => {
 		line5: '',
 		btnsource: 'https://github.com/martijnspitter/trillo',
 		text:
-			'This site was created as part of an advanced CSS course on Udemy. This site specificly was build to experiment with flexbox and has some small animantions and a couple of svg elements.',
+			'This site was created as part of an advanced CSS course on Udemy. This site specifically was built to experiment with flexbox and has some small animations and a couple of svg elements.',
 		backtext: 'Learning CSS with flexbox'
 	};
 };
@@ -29,7 +29,7 @@ const cardTwoReducer = () => {
 		line5: '',
 		btnsource: 'https://github.com/martijnspitter/jammming',
 		text:
-			'This website was created as part of the Codecademy React course. Here we explore the possibilities of React and the Yelp API using asyncronous requests. Extra functionality that would need to be build in before going live is; retention of search results upon login and confirmation upon save.',
+			'This website was created as part of the Codecademy React course. Here we explore the possibilities of React and the Yelp API using asynchronous requests. Extra functionality that would need to be built in before going live is; retention of search results upon login and confirmation upon save.',
 		backtext: 'Exploring React with the Yelp API'
 	};
 };
@@ -46,7 +46,7 @@ const cardThreeReducer = () => {
 		line5: 'rtmp and json server',
 		btnsource: 'https://github.com/martijnspitter/streams',
 		text:
-			'This website was created as part of a Advanced React course on Udemy. With it we explore Redux, React-Router and Axios. We created a json and rtmp server to host streams and data about the streams.',
+			'This website was created as part of an Advanced React course on Udemy. With it we explore Redux, React-Router and Axios. We created a json and rtmp server to host streams and data about the streams.',
 		backtext: 'Exploring React, Redux, Axios and React-Router'
 	};
 };

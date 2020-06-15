@@ -1,7 +1,7 @@
 .cards {
 	-webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
 	clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
-
+	height: auto;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -11,13 +11,13 @@
 	margin-top: -4rem;
 
 	@media only screen and (max-width: 81.88em) {
-		-webkit-clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-		clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+		-webkit-clip-path: polygon(0 4.5%, 100% 0, 100% 95%, 0 100%);
+		clip-path: polygon(0 4.5%, 100% 0, 100% 95%, 0 100%);
 	}
 
 	@media only screen and (max-width: 56.88em) {
-		-webkit-clip-path: polygon(0 3.5%, 100% 0, 100% 96.5%, 0 100%);
-		clip-path: polygon(0 3.5%, 100% 0, 100% 96.5%, 0 100%);
+		-webkit-clip-path: polygon(0 3%, 100% 0, 100% 96.8%, 0 100%);
+		clip-path: polygon(0 3%, 100% 0, 100% 96.8%, 0 100%);
 	}
 
 	@media only screen and (max-width: 46.06em) {
@@ -26,8 +26,8 @@
 	}
 
 	@media only screen and (max-width: 28em) {
-		-webkit-clip-path: polygon(0 1.2%, 100% 0, 100% 98.6%, 0 100%);
-		clip-path: polygon(0 1.2%, 100% 0, 100% 98.6%, 0 100%);
+		-webkit-clip-path: none;
+		clip-path: none;
 		margin-top: 0;
 	}
 }
@@ -37,18 +37,21 @@
 	@media only screen and (max-width: 56.88em) {
 		padding-top: 4rem;
 	}
+
+	& h1 {
+		margin-bottom: 0;
+	}
 }
 
 .card-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-	padding-bottom: 2rem;
+	height: 100% !important;
 
 	&__row {
 		display: flex;
-		margin: 2rem 0;
+
 		flex-wrap: wrap;
 		justify-content: center;
 	}
@@ -56,12 +59,12 @@
 
 .card {
 	//FUNCTIONALITY
-	perspective: 150rem; //we add the perspective on the parent element for the rotate. the high number is required but unclear why.
-	-moz-perspective: 150rem; //adds compatibility with mozzila firefox
+	perspective: 150rem;
+	-moz-perspective: 150rem;
 	position: relative;
-	height: 52rem; //this prevents this elements hight from colapsing when using position absolute
+	height: 52rem;
 	width: 30rem;
-	margin: -3rem 3rem 6rem 3rem;
+	margin: 3rem 3rem 3rem 3rem;
 
 	@include media(tab-port) {
 		width: 50rem;
@@ -71,15 +74,14 @@
 		height: 52rem;
 		transition: all .8s ease;
 		font-size: 2rem;
-		position: absolute; //this applies to both front and back and places them on top of each other.
+		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%; //postion absolute makes the width the size of the content of the div. Here we set it back to 100% of parent div
-		backface-visibility: hidden; //this hides the backside upon rotation which cause the back element to show up
+		width: 100%;
+		backface-visibility: hidden;
 		border-radius: 3px;
 		box-shadow: var(--shadow-light);
-		overflow: hidden; //because the image pops out of the side element we hide that to keep the rounded corners
-		//this actually doesnt work when using clip-path... grrr
+		overflow: hidden;
 
 		&--front {
 			background-color: var(--color-grey-light-1);
@@ -111,12 +113,12 @@
 	//FRONT SIDE STYLING
 	&__picture {
 		background-size: cover;
-		height: 23rem; //since this element has no html content the size needs to be set
-		background-blend-mode: screen; //this blends the gradient with the image. this can only be done on background images in css not on html image elements
+		height: 23rem;
+		background-blend-mode: screen;
 		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 		border-top-left-radius: 3px;
-		border-top-right-radius: 3px; //this adds the rounded corners again after clip-path
+		border-top-right-radius: 3px;
 
 		&--1 {
 			background-image: linear-gradient(to right bottom, rgba($yellow, .3), var(--yellow)), url(images/webdev.jpg);
@@ -145,7 +147,7 @@
 
 	&__heading-span {
 		padding: 1rem 1.5rem;
-		-webkit-box-decoration-break: clone; //with this the one span gets treated as two seperate lines. bad support so use webkit
+		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
 		&--1 {
 			background-image: linear-gradient(to right bottom, rgba($yellow, .3), rgba($yellow, .85));
@@ -169,10 +171,6 @@
 				text-align: center;
 				font-size: 1.5rem;
 				padding: 1rem;
-
-				&:not(:last-child) {
-					border-bottom: 1px solid var(--color-gray-light-2);
-				}
 			}
 		}
 	}

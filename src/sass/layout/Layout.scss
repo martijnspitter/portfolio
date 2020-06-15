@@ -5,7 +5,6 @@
 	background-image: linear-gradient(to right bottom, rgba($dark-blue, .2), rgba($dark-blue, .8));
 	box-shadow: var(--shadow-big-blur);
 
-	min-height: 50rem;
 	display: flex;
 	justify-content: center;
 
@@ -22,26 +21,16 @@
 	width: 90%;
 }
 
-.content {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 90%;
-}
-
 .gradient {
-	width: 100%;
 	padding: 20rem 5rem;
-	box-shadow: var(--shadow-light);
 
-	flex: 1;
 	@media only screen and (max-width: 64em) {
 		padding: 15rem 5rem;
 	}
 
 	@media only screen and (max-width: 28em) {
 		padding: 5rem 5rem;
+		margin: 5rem 0;
 	}
 }
 
@@ -61,24 +50,32 @@
 
 .u-margin-bottom {
 	margin-bottom: 2rem;
+	@media only screen and (max-width: 28em) {
+		margin-top: 3rem;
+	}
 }
 
 .u-margin-bottom-small {
 	margin-bottom: 1rem;
+	@media only screen and (max-width: 28em) {
+		margin-top: 1rem;
+	}
 }
 
 .u-margin-bottom-big {
 	margin-bottom: 5rem;
-	margin-top: -3rem;
+
+	@media only screen and (max-width: 28em) {
+		margin-top: 0rem;
+	}
 }
 
 .wrap {
 	filter: drop-shadow(0 2rem 2rem rgba(0, 0, 0, .2));
 	width: 100%;
-	display: flex;
-	justify-content: center;
+	height: auto;
 }
 
 .background {
-	background-image: linear-gradient(to right bottom, rgba($color-grey-light-1, 1), rgba($color-grey-light-4, 1));
+	background-image: linear-gradient(to right bottom, rgba($color-grey-light-1, 1), rgba($color-grey-light-3, 1));
 }

@@ -10,7 +10,7 @@ class Skills extends Component {
 			<div className="wrap">
 				<div className="skills gradient background" id="skills">
 					<div className="skills__container">
-						<h1 className="heading-primary u-margin-bottom-small">Front end developer</h1>
+						<h1 className="heading-primary u-margin-bottom">Front end developer</h1>
 
 						<div className="skills__content">
 							<div className="skills__div">
