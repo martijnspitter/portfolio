@@ -1,47 +1,6 @@
 .about {
 	width: 100%;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 78%, 0 100%);
-
-	@media only screen and (max-width: 81.88em) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-	}
-
-	@media only screen and (max-width: 68.75em) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
-	}
-
-	@media only screen and (max-width: 64em) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
-	}
-
-	@media only screen and (max-width: 56.88em) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-	}
-
-	@media only screen and (max-width: 50em) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-	}
-
-	@media only screen and (max-width: 37.5em) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-	}
-
-	@media only screen and (max-width: 33.75em) {
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 100%);
-		clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
-	}
-
-	@media only screen and (max-width: 28em) {
-		-webkit-clip-path: none;
-		clip-path: none;
-	}
+	margin: 5rem 0 5rem 0;
 
 	&__container {
 		display: flex;
@@ -49,23 +8,20 @@
 
 		justify-content: space-evenly;
 		flex-wrap: wrap;
-		padding: 5rem 0 15rem 0;
+		padding: 5rem 5rem;
 
 		@media only screen and (max-width: 50em) {
 			flex-direction: column;
 		}
 		@media only screen and (max-width: 28em) {
 			flex-direction: column;
-			padding: 0rem 0 7rem 0;
+			padding: 4rem 0 0rem 0;
 			align-items: center;
 			justify-content: center;
 		}
 	}
 
 	&__picture {
-		padding: 3rem;
-		margin: 3rem 1rem 0 1rem;
-
 		&--profile-picture {
 			height: 20rem;
 			width: 20rem;

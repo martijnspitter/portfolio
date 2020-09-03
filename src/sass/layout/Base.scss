@@ -1,14 +1,4 @@
 // GLOBAL RESET:
-* {
-	margin: 0;
-	padding: 0;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: inherit; //everything inherits border-box
-}
 
 html {
 	box-sizing: border-box; //working with border-box
@@ -21,11 +11,27 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	line-height: 1.6;
-	color: var(--color-grey-dark-2);
+	color: var(--color-grey-dark-2) !important;
 	position: absolute;
 	top: 0;
 	right: 0;
 	width: 100%;
 	overflow-x: hidden;
 	min-height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
 }

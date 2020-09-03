@@ -29,6 +29,3 @@ class Header extends Component {
 }
 
 export default Header;
-
-//Add login button. square rounded. One time passwords for login!
-// menu button square rounded. grow down.

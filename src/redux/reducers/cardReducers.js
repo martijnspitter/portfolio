@@ -1,6 +1,4 @@
-import { combineReducers } from 'redux';
-
-const cardOneReducer = () => {
+export const cardOneReducer = () => {
 	return {
 		id: 1,
 		number: '1',
@@ -17,7 +15,7 @@ const cardOneReducer = () => {
 	};
 };
 
-const cardTwoReducer = () => {
+export const cardTwoReducer = () => {
 	return {
 		id: 2,
 		number: '2',
@@ -34,7 +32,7 @@ const cardTwoReducer = () => {
 	};
 };
 
-const cardThreeReducer = () => {
+export const cardThreeReducer = () => {
 	return {
 		id: 3,
 		number: '3',
@@ -51,7 +49,7 @@ const cardThreeReducer = () => {
 	};
 };
 
-const cardFourReducer = () => {
+export const cardFourReducer = () => {
 	return {
 		id: 4,
 		number: '1',
@@ -68,7 +66,7 @@ const cardFourReducer = () => {
 	};
 };
 
-const cardFiveReducer = () => {
+export const cardFiveReducer = () => {
 	return {
 		id: 5,
 		number: '2',
@@ -85,7 +83,7 @@ const cardFiveReducer = () => {
 	};
 };
 
-const cardSixReducer = () => {
+export const cardSixReducer = () => {
 	return {
 		id: 6,
 		number: '3',
@@ -102,19 +100,9 @@ const cardSixReducer = () => {
 	};
 };
 
-const selectedCardReducer = (selectedCard = null, action) => {
+export const selectedCardReducer = (selectedCard = null, action) => {
 	if (action.type === 'CARD_SELECTED') {
 		return action.payload;
 	}
 	return selectedCard;
 };
-
-export default combineReducers({
-	one: cardOneReducer,
-	two: cardTwoReducer,
-	three: cardThreeReducer,
-	four: cardFourReducer,
-	five: cardFiveReducer,
-	six: cardSixReducer,
-	card: selectedCardReducer
-});

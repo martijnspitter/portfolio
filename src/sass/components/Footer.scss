@@ -6,30 +6,9 @@
 
 	height: 100%;
 	width: 100%;
-	margin-top: -8rem;
-	margin-bottom: 7rem;
-
-	-webkit-clip-path: polygon(0 36%, 100% 0, 100% 100%, 0 100%);
-	clip-path: polygon(0 36%, 100% 0, 100% 100%, 0 100%);
-
-	@media only screen and (max-width: 81.88em) {
-		-webkit-clip-path: polygon(0 28%, 100% 0, 100% 100%, 0 100%);
-		clip-path: polygon(0 28%, 100% 0, 100% 100%, 0 100%);
-	}
-
-	@media only screen and (max-width: 68.75em) {
-		-webkit-clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 100%);
-		clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 100%);
-	}
-
-	@media only screen and (max-width: 33.75em) {
-		-webkit-clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 100%);
-		clip-path: polygon(0 24%, 100% 0, 100% 100%, 0 100%);
-	}
+	margin: 5rem 0 10rem 0;
 
 	@media only screen and (max-width: 28em) {
-		-webkit-clip-path: none;
-		clip-path: none;
 		margin-top: 0;
 	}
 
@@ -37,7 +16,7 @@
 		width: 10rem;
 		height: 10rem;
 
-		margin-top: 20rem;
+		margin-top: 8rem;
 		@media only screen and (max-width: 28em) {
 			margin-top: 6rem;
 		}
@@ -50,6 +29,14 @@
 		flex-wrap: wrap;
 		width: 100%;
 		font-size: 1.6rem;
+
+		margin-top: 3rem;
+		padding-bottom: 8rem;
+
+		@media only screen and (max-width: 68.75em) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 }
 
@@ -57,27 +44,29 @@
 	max-width: 50rem;
 	margin: 0 3rem;
 
+	&__text {
+		margin-bottom: 1rem;
+	}
+
 	&__text a {
 		text-decoration: none;
 		color: var(--color-tertiary-dark);
 	}
 
 	&__logos {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
-		padding-top: 2rem;
-
 		&--linkedin {
-			height: 6rem;
-			width: 6rem;
+			height: 3rem;
+			width: 3rem;
 		}
 
 		&--github {
-			height: 10rem;
-			width: 10rem;
+			height: 5rem;
+			width: 5rem;
 		}
+	}
+
+	@media only screen and (max-width: 68.75em) {
+		margin-bottom: 3rem;
 	}
 }
 

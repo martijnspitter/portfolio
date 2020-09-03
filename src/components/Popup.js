@@ -8,16 +8,6 @@ import videos from '../images/videos.gif';
 import streams from '../images/streams.gif';
 import ravanous from '../images/ravanous.gif';
 
-// the problem here was that rendering the popup inside the card and then pasisng the appropiate props to it didnt work. I could not get the background full page with from inside the backside of a card.
-// i could have created 6 different popups and link them to the corresponding buttons
-// But that was clearly not in keeping with reacts main reason of being: reusability.
-// so i choose to use redux. I implemented it and let the cards use the redux state to render
-// i passed in the state as a prop to the card component.
-// inside the card component the button click updated the card state.
-// here we take that updated state and use it to render a different popup each time
-// im pretty sure there is a better solution for this since this doenst seem to be a clean solution
-// but im happy i managed to solve this.
-
 class Popup extends Component {
 	cardSelector = () => {
 		if (this.props.card === 1) {

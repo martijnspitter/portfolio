@@ -3,29 +3,11 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	margin-top: -4rem;
-
-	-webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
-	clip-path: polygon(0 14%, 100% 0, 100% 86%, 0 100%);
-
-	@media only screen and (max-width: 91.25em) {
-		-webkit-clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
-		clip-path: polygon(0 9%, 100% 0, 100% 91%, 0 100%);
-	}
-
-	@media only screen and (max-width: 46.06em) {
-		-webkit-clip-path: polygon(0 5.5%, 100% 0, 100% 93%, 0 100%);
-		clip-path: polygon(0 5.5%, 100% 0, 100% 93%, 0 100%);
-	}
-
-	@media only screen and (max-width: 28em) {
-		-webkit-clip-path: none;
-		clip-path: none;
-		margin-top: 4rem;
-	}
+	width: 100%;
+	margin: 5rem 0;
 
 	&__container {
+		padding: 8rem 5rem;
 		text-align: center;
 	}
 

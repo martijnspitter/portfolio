@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { selectCard } from '../actions';
+import { selectCard } from '../redux/actions';
 import { connect } from 'react-redux';
 
 class Card extends Component {
@@ -8,7 +8,7 @@ class Card extends Component {
 		return (
 			<a
 				href="#popup"
-				className="btn btn--white"
+				className="cvbtn cvbtn--white"
 				onClick={() => {
 					this.props.selectCard(card);
 				}}
@@ -19,13 +19,15 @@ class Card extends Component {
 	};
 	render() {
 		return (
-			<div className="card">
-				<div className="card__side card__side--front">
-					<div className={`card__picture card__picture--${this.props.number}`}>&nbsp;</div>
-					<h4 className="card__heading">
-						<span className={`card__heading-span card__heading-span--${this.props.number}`}>{this.props.title}</span>
+			<div className="cvcard">
+				<div className="cvcard__side cvcard__side--front">
+					<div className={`cvcard__picture cvcard__picture--${this.props.number}`}>&nbsp;</div>
+					<h4 className="cvcard__heading">
+						<span className={`cvcard__heading-span cvcard__heading-span--${this.props.number}`}>
+							{this.props.title}
+						</span>
 					</h4>
-					<div className="card__details">
+					<div className="cvcard__details">
 						<ul>
 							<li>{this.props.line1}</li>
 							<li>{this.props.line2}</li>
@@ -35,9 +37,9 @@ class Card extends Component {
 						</ul>
 					</div>
 				</div>
-				<div className={`card__side card__side--back card__side--back-${this.props.number}`}>
-					<div className="card__cta">
-						<div className="card__price-box">{this.props.backtext}</div>
+				<div className={`cvcard__side cvcard__side--back cvcard__side--back-${this.props.number}`}>
+					<div className="cvcard__cta">
+						<div className="cvcard__price-box">{this.props.backtext}</div>
 						{this.selectedCard()}
 					</div>
 				</div>

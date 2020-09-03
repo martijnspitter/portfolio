@@ -1,4 +1,4 @@
-.container {
+.cv-container {
 	max-width: 100%;
 
 	padding-top: 10rem;
@@ -19,10 +19,11 @@
 	justify-content: center;
 	align-items: center;
 	width: 90%;
+	max-width: 140rem;
 }
 
 .gradient {
-	padding: 20rem 5rem;
+	//padding: 20rem 5rem;
 
 	@media only screen and (max-width: 64em) {
 		padding: 15rem 5rem;
@@ -78,4 +79,5 @@
 
 .background {
 	background-image: linear-gradient(to right bottom, rgba($color-grey-light-1, 1), rgba($color-grey-light-3, 1));
+	filter: drop-shadow(0 2rem 2rem rgba(0, 0, 0, .2));
 }

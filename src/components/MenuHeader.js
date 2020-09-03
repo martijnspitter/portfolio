@@ -30,6 +30,11 @@ class MenuHeader extends Component {
 							<span>Contact</span>
 						</a>
 					</li>
+					<li className="menu__item">
+						<a href="/issuetracker/" className="menu__link">
+							<span>IssueTracker</span>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		);

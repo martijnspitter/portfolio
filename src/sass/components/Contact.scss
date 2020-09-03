@@ -1,0 +1,95 @@
+.contact {
+	display: flex;
+	justify-content: center;
+
+	margin-top: -10rem;
+
+	&__text {
+		width: 50%;
+		font-size: 1.6rem;
+		padding-top: 4rem;
+	}
+
+	&__text p {
+		width: 80%;
+		margin: 3rem 0;
+	}
+
+	&__text a {
+		text-decoration: none;
+		color: var(--color-tertiary-dark);
+	}
+
+	&__logos {
+		display: flex;
+		align-items: center;
+		justify-content: left;
+		flex-wrap: wrap;
+
+		&--linkedin {
+			height: 3rem;
+			width: 3rem;
+		}
+
+		&--github {
+			height: 5rem;
+			width: 5rem;
+		}
+	}
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding-top: 4rem;
+
+	&__group:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+	&__input {
+		font-family: inherit;
+		font-size: 1.5rem;
+		color: inherit;
+		padding: 1.5rem 2rem;
+		border-radius: 3px;
+		background-color: rgb(232, 240, 254);
+		box-shadow: 0 1rem 1rem rgba(0, 0, 0, .05);
+		border: none;
+		border-bottom: 3px solid transparent; //we add a transparant border here so that there is no jumping when focussed.
+		width: 90%;
+		//display: block;
+		transition: all .3s;
+
+		&::-webkit-input-placeholder {
+			color: var(--color-grey-dark-2);
+		}
+
+		&:focus {
+			outline: none;
+			box-shadow: $shadow-light;
+			border-bottom: 3px solid $color-primary;
+			&:invalid {
+				border-bottom: 3px solid $orange;
+			}
+		}
+	}
+
+	&__label {
+		font-family: inherit;
+		font-size: 1.3rem;
+		font-weight: 700;
+		color: inherit;
+		margin-left: 2rem;
+		margin-top: .7rem;
+		display: block;
+		transition: all .3s;
+		transform: translateY(-8rem);
+	}
+
+	&__input:placeholder-shown + &__label {
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-4rem);
+	}
+}
