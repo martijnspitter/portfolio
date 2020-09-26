@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import headshot from '../images/headshot.jpg';
+import logo from '../images/logoFill.svg';
 
 export default class cv extends Component {
 	render() {
 		return (
-			<div className="cv" id="cv">
+			<div className="cv safari_only" id="cv">
 				<div className="cv__container background">
 					<div className="cv__left-side">
 						<img src={headshot} alt="profilepicture" className="cv__img" />
-						<h1 className="cv__name--first">Martijn</h1>
-						<h1 className="cv__name--last">Spitter</h1>
+						<img src={logo} alt="pagelogo" className="cv__logo" />
 					</div>
 
 					<div className="cv__right-side background">
 						<div className="cv__skills">
-							<h1 className="heading-primary u-margin-bottom">CV</h1>
+							<h1 className="heading-primary u-margin-bottom">CV Martijn Spitter</h1>
 							Because I’m working towards a new career as a developer <br /> I have no relevant experience. But that
 							does not mean I don’t have any transferable skills.<br />
 							<br /> I have excellent communication skills and I work well under pressure. In the past I have led teams

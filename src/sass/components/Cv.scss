@@ -1,10 +1,11 @@
 .cv {
 	position: relative;
-	height: 100%;
+
 	margin: 5rem 0;
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	height: 100%;
 
 	&__container {
 		display: flex;
@@ -12,6 +13,8 @@
 		align-items: center;
 		overflow: hidden;
 		width: 100%;
+
+		border-radius: 3px;
 
 		@media only screen and (max-width: 28em) {
 			flex-direction: column;
@@ -21,14 +24,14 @@
 	}
 
 	&__left-side {
-		width: 35%;
+		width: 30%;
 		height: 100%;
+		position: relative;
 
-		@media only screen and (max-width: 28em) {
-			width: 100%;
-			height: 5%;
-			align-self: center;
-			margin-top: 6rem;
+		@media only screen and (max-width: 68em) {
+			visibility: hidden;
+			width: 0;
+			height: 0;
 		}
 	}
 
@@ -37,79 +40,47 @@
 		height: 100%;
 		margin-left: -25rem;
 
-		@media only screen and (max-width: 46.06em) {
-			margin-left: -35rem;
+		@media only screen and (max-width: 90em) {
+			margin-left: -30rem;
 		}
 
-		@media only screen and (max-width: 28em) {
+		@media only screen and (max-width: 75em) {
+			margin-left: -32rem;
+		}
+
+		@media only screen and (max-width: 68em) {
 			visibility: hidden;
 			width: 0;
 			height: 0;
 		}
 	}
 
-	&__name {
-		&--first {
-			position: absolute;
-			bottom: 6rem;
-			left: 0;
+	&__logo {
+		position: absolute;
+		left: 4rem;
+		bottom: 0;
+		width: 15rem;
+		height: 15rem;
+		z-index: 1000000;
+		fill: white;
 
-			font-size: 5rem;
-			color: var(--color-grey-light-1);
-
-			text-transform: uppercase;
-			writing-mode: vertical-lr;
-			text-orientation: upright;
-
-			@media only screen and (max-width: 28em) {
-				position: unset;
-				text-transform: uppercase;
-				writing-mode: inherit;
-				text-orientation: inherit;
-				text-align: center;
-				color: var(--yellow);
-			}
-		}
-
-		&--last {
-			font-size: 3.5rem;
-			color: var(--yellow);
-
-			position: absolute;
-			bottom: 6.7rem;
-			left: 8rem;
-
-			text-transform: uppercase;
-			writing-mode: vertical-lr;
-			text-orientation: upright;
-
-			@media only screen and (max-width: 28em) {
-				position: inherit;
-				text-transform: uppercase;
-				writing-mode: inherit;
-				text-orientation: inherit;
-				text-align: center;
-			}
+		@media only screen and (max-width: 90em) {
+			left: 4rem;
+			bottom: 0;
+			width: 15rem;
+			height: 15rem;
 		}
 	}
 
 	&__right-side {
 		width: 100%;
 		height: 100%;
-
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 
 		padding: 8rem 0;
-
-		@media only screen and (max-width: 28em) {
-			background-image: unset;
-			height: 100%;
-			margin: 2rem 0;
-			padding: 0;
-		}
 	}
 
 	&__skills {
@@ -157,10 +128,6 @@
 	flex-wrap: wrap;
 	width: 100%;
 
-	&:last-child {
-		margin-bottom: 4rem;
-	}
-
 	@media only screen and (max-width: 68.75em) {
 		margin-bottom: 1rem;
 	}
@@ -175,9 +142,9 @@
 // }
 
 .col-1-of-3 {
-	width: 25rem;
+	width: 20rem;
 }
 
 .col-2-of-3 {
-	width: 15rem;
+	width: 20rem;
 }

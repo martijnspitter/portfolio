@@ -14,9 +14,9 @@
 	box-shadow: var(--shadow-light);
 
 	&__logo {
-		height: 5rem;
-		width: 5rem;
-		padding: 1rem;
+		height: 3rem;
+		width: 3rem;
+		margin: 1rem;
 
 		@media only screen and (max-width: 28em) {
 			height: 0rem;

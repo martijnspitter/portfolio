@@ -23,7 +23,7 @@ class Popup extends Component {
 						<h3 className="heading-tertiary u-margin-bottom-small">{this.props.one.title}</h3>
 						<p className="popup__text">{this.props.one.text}</p>
 
-						<a href={this.props.one.btnsource} target="_blank" rel="noopener noreferrer" className="btn btn--green">
+						<a href={this.props.one.btnsource} target="_blank" rel="noopener noreferrer" className="cvbtn btn--green">
 							SOURCE CODE
 						</a>
 					</div>
@@ -43,7 +43,7 @@ class Popup extends Component {
 						</a>
 						<h3 className="heading-tertiary u-margin-bottom-small">{this.props.two.title}</h3>
 						<p className="popup__text">{this.props.two.text}</p>
-						<a href={this.props.two.btnsource} target="_blank" rel="noopener noreferrer" className="btn btn--green">
+						<a href={this.props.two.btnsource} target="_blank" rel="noopener noreferrer" className="cvbtn btn--green">
 							SOURCE CODE
 						</a>
 					</div>
@@ -63,7 +63,7 @@ class Popup extends Component {
 						</a>
 						<h3 className="heading-tertiary u-margin-bottom-small">{this.props.three.title}</h3>
 						<p className="popup__text">{this.props.three.text}</p>
-						<a href={this.props.three.btnsource} target="_blank" rel="noopener noreferrer" className="btn btn--green">
+						<a href={this.props.three.btnsource} target="_blank" rel="noopener noreferrer" className="cvbtn btn--green">
 							SOURCE CODE
 						</a>
 					</div>
@@ -83,7 +83,7 @@ class Popup extends Component {
 						</a>
 						<h3 className="heading-tertiary u-margin-bottom-small">{this.props.four.title}</h3>
 						<p className="popup__text">{this.props.four.text}</p>
-						<a href={this.props.four.btnsource} target="_blank" rel="noopener noreferrer" className="btn btn--green">
+						<a href={this.props.four.btnsource} target="_blank" rel="noopener noreferrer" className="cvbtn btn--green">
 							SOURCE CODE
 						</a>
 					</div>
@@ -104,7 +104,7 @@ class Popup extends Component {
 						</a>
 						<h3 className="heading-tertiary u-margin-bottom-small">{this.props.five.title}</h3>
 						<p className="popup__text">{this.props.five.text}</p>
-						<a href={this.props.five.btnsource} target="_blank" rel="noopener noreferrer" className="btn btn--green">
+						<a href={this.props.five.btnsource} target="_blank" rel="noopener noreferrer" className="cvbtn btn--green">
 							SOURCE CODE
 						</a>
 					</div>
@@ -124,7 +124,7 @@ class Popup extends Component {
 						</a>
 						<h3 className="heading-tertiary u-margin-bottom-small">{this.props.six.title}</h3>
 						<p className="popup__text">{this.props.six.text}</p>
-						<a href={this.props.six.btnsource} target="_blank" rel="noopener noreferrer" className="btn btn--green">
+						<a href={this.props.six.btnsource} target="_blank" rel="noopener noreferrer" className="cvbtn btn--green">
 							SOURCE CODE
 						</a>
 					</div>

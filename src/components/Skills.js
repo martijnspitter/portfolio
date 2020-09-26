@@ -7,7 +7,7 @@ import reactlogo from '../images/react.png';
 class Skills extends Component {
 	render() {
 		return (
-			<div className="skills background" id="skills">
+			<div className="skills background safari_only" id="skills">
 				<div className="skills__container">
 					<h1 className="heading-primary u-margin-bottom">Front end developer</h1>
 

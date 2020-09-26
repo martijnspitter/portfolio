@@ -27,7 +27,7 @@ export default class SectionNew extends Component {
 
 	render() {
 		return (
-			<div className="sectionNew background" id="issuetracker">
+			<div className="sectionNew background safari_only" id="issuetracker">
 				<div className="sectionNew__container">
 					<h3 className="heading-tertiary u-margin-bottom-small" style={{ display: 'flex', justifyContent: 'center' }}>
 						Issuetracker
@@ -52,14 +52,22 @@ export default class SectionNew extends Component {
 						<strong>
 							Features <br />
 						</strong>
-						For now all users are in a single group since I dont expect a lot of traffic. Every user can make a project
-						and then add or remove users to that project. Users not added to a project won't see that project. Every
-						user in a project can make an issue and assign a user to that issue. Issues are given an status and
+						For now all users are in a single group since I don't expect a lot of traffic. Every user can make a project
+						and then add or remove users to that project. Users not added to a project won't see that project.
+					</p>
+					<p className="sectionNew__text">
+						Every user in a project can make an issue and assign a user to that issue. Issues are given a status and
 						priority. Both the project creator and the issue creator can change the status, edit, reassign and delete
-						the issue. The user assigned to the project gan change the status. Every user in the project can comment on
-						an issue. Project, issue and comment creators can edit or delete the comment. Users see their own name as
-						'you' and in a blue color. Comment creators see their comments on the right side and comments from other
-						users on the left side. For a more extensive explanation check out the IssueTracker documentation.
+						the issue. The user assigned to the issue can change the status.
+					</p>
+					<p className="sectionNew__text">
+						Every user in the project can comment on an issue. Project, issue and comment creators can edit or delete
+						the comment. Users see their own name as 'you' and in a blue color. Comment creators see their comments on
+						the right side and comments from other users on the left side.
+					</p>
+					<p className="sectionNew__text">
+						For a more extensive explanation check out the IssueTracker documentation. For the code you can follow{' '}
+						<a href="https://github.com/martijnspitter/issuetracker">this link</a> to Github.
 					</p>
 
 					<div className="sectionNew__photo">

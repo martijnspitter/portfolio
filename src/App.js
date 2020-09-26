@@ -30,7 +30,6 @@ class App extends Component {
 				<div>
 					<Switch>
 						<Route path="/issuetracker/" component={IssueTracker} />
-
 						<Route path="/issuetracker/" exact>
 							<Redirect to="/issuetracker/welcome" />
 						</Route>

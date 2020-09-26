@@ -6,7 +6,7 @@ import github from '../images/github-logo.png';
 export default class Footer extends Component {
 	render() {
 		return (
-			<footer className="footer background" id="contact">
+			<footer className="footer background safari_only" id="contact">
 				<img src={logo} className="footer__logo" alt="logo" />
 
 				<h3 className="heading-tertiary" style={{ margin: '0 1rem', textAlign: 'center' }}>
