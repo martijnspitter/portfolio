@@ -29,21 +29,11 @@ _:future,
 
 .card-container {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-
+	flex-wrap: wrap;
+	justify-content: center;
 	height: 100%;
 
 	padding-bottom: 8rem;
-
-	&__row {
-		display: flex;
-
-		height: 100%;
-
-		flex-wrap: wrap;
-		justify-content: center;
-	}
 }
 
 .cvcard {

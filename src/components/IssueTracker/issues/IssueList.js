@@ -144,7 +144,7 @@ class IssueList extends Component {
 		);
 
 		return (
-			<Container>
+			<Container style={{ marginBottom: '4rem' }}>
 				<ListGroup>
 					<ListGroup.Item variant="secondary">
 						<Row>

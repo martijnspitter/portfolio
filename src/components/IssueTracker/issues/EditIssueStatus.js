@@ -48,7 +48,7 @@ class EditIssueStatus extends Component {
 			return (
 				<React.Fragment>
 					<Button variant="success" onClick={(e) => this.statusClosed(issueId)}>
-						CLOSE
+						CLOSED
 					</Button>
 					<Button variant="warning" onClick={(e) => this.statusOnHold(issueId)}>
 						ON HOLD
@@ -70,7 +70,7 @@ class EditIssueStatus extends Component {
 			return (
 				<React.Fragment>
 					<Button variant="success" onClick={(e) => this.statusClosed(issueId)}>
-						CLOSE
+						CLOSED
 					</Button>
 					<Button variant="primary" onClick={(e) => this.statusOpen(issueId)}>
 						OPEN

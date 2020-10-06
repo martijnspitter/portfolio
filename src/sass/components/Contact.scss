@@ -1,23 +1,46 @@
 .contact {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 
-	margin-top: -10rem;
+	width: 100%;
+	margin: 5rem 0 5rem 0;
+	border-radius: 3px;
+	padding: 4rem 8rem;
+
+	@media only screen and (max-width: 57.44em) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	@media only screen and (max-width: 28em) {
+		padding: 0rem 4rem;
+	}
+
+	@media only screen and (max-width: 20.38em) {
+		padding: 0rem 2rem;
+	}
 
 	&__text {
 		width: 50%;
 		font-size: 1.6rem;
 		padding-top: 4rem;
+
+		@media only screen and (max-width: 57.44em) {
+			width: 100%;
+		}
 	}
 
 	&__text p {
 		width: 80%;
 		margin: 3rem 0;
+		@media only screen and (max-width: 57.44em) {
+			width: 100%;
+		}
 	}
 
 	&__text a {
 		text-decoration: none;
-		color: var(--color-tertiary-dark);
+		color: rgba($dark-blue, .9);
 	}
 
 	&__logos {
@@ -42,7 +65,11 @@
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	padding-top: 4rem;
+	padding: 4rem 0;
+
+	@media only screen and (max-width: 57.44em) {
+		width: 100%;
+	}
 
 	&__group:not(:last-child) {
 		margin-bottom: 2rem;
@@ -57,7 +84,7 @@
 		box-shadow: 0 1rem 1rem rgba(0, 0, 0, .05);
 		border: none;
 		border-bottom: 3px solid transparent; //we add a transparant border here so that there is no jumping when focussed.
-		width: 90%;
+		width: 100%;
 		//display: block;
 		transition: all .3s;
 
@@ -84,7 +111,7 @@
 		margin-top: .7rem;
 		display: block;
 		transition: all .3s;
-		transform: translateY(-8rem);
+		transform: translateY(0rem);
 	}
 
 	&__input:placeholder-shown + &__label {

@@ -26,6 +26,14 @@ class App extends Component {
 			<Router history={history}>
 				<Switch>
 					<Route path="/" exact component={CvHome} />
+					<Route
+						path={`/external`}
+						exact
+						component={() => {
+							window.location = 'http://digitalgarden.martijnspitter.nl';
+							return null;
+						}}
+					/>
 				</Switch>
 				<div>
 					<Switch>

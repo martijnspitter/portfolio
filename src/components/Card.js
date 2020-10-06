@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
 import { selectCard } from '../redux/actions';
 import { connect } from 'react-redux';
+import CardPopup from './CardPopup';
 
 class Card extends Component {
-	selectedCard = () => {
-		const card = this.props.id;
-		return (
-			<a
-				href="#popup"
-				className="cvbtn cvbtn--white"
-				onClick={() => {
-					this.props.selectCard(card);
-				}}
-			>
-				DEMO
-			</a>
-		);
-	};
+	constructor(props) {
+		super(props);
+		this.state = {
+			src: null,
+			show: false
+		};
+
+		this.onHide = this.onHide.bind(this);
+	}
+
+	onHide() {
+		this.setState({
+			show: false
+		});
+	}
+
 	render() {
 		return (
 			<div className="cvcard">
@@ -40,9 +43,24 @@ class Card extends Component {
 				<div className={`cvcard__side cvcard__side--back cvcard__side--back-${this.props.number}`}>
 					<div className="cvcard__cta">
 						<div className="cvcard__price-box">{this.props.backtext}</div>
-						{this.selectedCard()}
+						<button
+							className="cvbtn cvbtn--white"
+							onClick={() => {
+								this.setState({ show: true });
+							}}
+						>
+							DEMO
+						</button>
 					</div>
 				</div>
+				<CardPopup
+					show={this.state.show}
+					onHide={this.onHide}
+					title={this.props.title}
+					text={this.props.text}
+					btnsourc={this.props.btnsourc}
+					id={this.props.id}
+				/>
 			</div>
 		);
 	}

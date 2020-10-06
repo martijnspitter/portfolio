@@ -173,10 +173,10 @@ class Projects extends Component {
 								Select Project
 							</Button>
 						</Col>
-						<Col />
-						<Col />
-						<Col />
-						<Col />
+						<Col style={{ width: '20rem', padding: '0 1.5rem' }} />
+						<Col style={{ width: '20rem', padding: '0 1.5rem' }} />
+						<Col style={{ width: '20rem', padding: '0 1.5rem' }} />
+						<Col style={{ width: '20rem', padding: '0 1.5rem' }} />
 					</Row>
 				</Card.Footer>
 			);

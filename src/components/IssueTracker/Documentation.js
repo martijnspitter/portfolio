@@ -7,9 +7,7 @@ export default class Documentation extends Component {
 		return (
 			<Container style={{ display: 'flex', justifyContent: 'center' }}>
 				<Card style={{ width: '100%' }}>
-					<Card.Header className="text-white bg-dark" style={{ justifyContent: 'center' }}>
-						IssueTracker Documentation
-					</Card.Header>
+					<Card.Header style={{ justifyContent: 'center' }}>IssueTracker Documentation</Card.Header>
 					<Card.Body style={{ padding: '2rem 4rem' }}>
 						<div>
 							<h2 id="nmt">Introduction</h2>
@@ -19,8 +17,8 @@ export default class Documentation extends Component {
 								Bootstrap, NodeJS (with Express and Sequelize) and MySQL. And learn a lot I did! I am happy with the
 								result and I hope you are too!
 							</p>
-							<h4> Feel free to use this IssueTracker on your own Projects!</h4>
-							<h4>Greeting Martijn </h4>
+							<p> Feel free to use this IssueTracker on your own Projects!</p>
+							<p>Greeting Martijn </p>
 						</div>
 
 						<div>
@@ -153,16 +151,16 @@ export default class Documentation extends Component {
 						</div>
 
 						<div>
-							<h4>Comments</h4>
-							<h2>Navigation</h2>
+							<h2>Comments</h2>
+							<h4>Navigation</h4>
 							<p>Comments are shown on the issues. When you navigate to an issue you will see the comments</p>
 
-							<h2>Ownership of the comment</h2>
+							<h4>Ownership of the comment</h4>
 							<p>
 								As owner of a comment you can edit or delete a comment. A issue or project creator can do this as well.
 							</p>
 
-							<h2>Rendering of comments</h2>
+							<h4>Rendering of comments</h4>
 							<p>
 								Your own comments will be shown on the right. Comments of other people will appear on the left side of
 								the screen

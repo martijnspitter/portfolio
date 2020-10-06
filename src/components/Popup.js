@@ -124,7 +124,7 @@ class Popup extends Component {
 						</a>
 						<h3 className="heading-tertiary u-margin-bottom-small">{this.props.six.title}</h3>
 						<p className="popup__text">{this.props.six.text}</p>
-						<a href={this.props.six.btnsource} target="_blank" rel="noopener noreferrer" className="cvbtn btn--green">
+						<a href={this.props.six.btnsource} target="_blank" rel="noopener noreferrer" className="cvbtn cvbtn--green">
 							SOURCE CODE
 						</a>
 					</div>

@@ -11,6 +11,11 @@ class MenuHeader extends Component {
 						</a>
 					</li>
 					<li className="menu__item">
+						<a href="#new" className="menu__link">
+							<span>New</span>
+						</a>
+					</li>
+					<li className="menu__item">
 						<a href="#skills" className="menu__link">
 							<span>Skills</span>
 						</a>
@@ -33,6 +38,11 @@ class MenuHeader extends Component {
 					<li className="menu__item">
 						<a href="/issuetracker/" className="menu__link">
 							<span>IssueTracker</span>
+						</a>
+					</li>
+					<li className="menu__item">
+						<a href="/external" className="menu__link">
+							<span>Digital Garden</span>
 						</a>
 					</li>
 				</ul>

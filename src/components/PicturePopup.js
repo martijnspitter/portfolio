@@ -12,7 +12,7 @@ export default class picturePopup extends Component {
 				aria-labelledby="contained-modal-title-vcenter"
 				centered
 			>
-				<Modal.Header closeButton>IssueTracker</Modal.Header>
+				<Modal.Header closeButton />
 				<Modal.Body>
 					<img src={this.props.src} alt="popup" className="sectionNew__photo--p4" />
 				</Modal.Body>

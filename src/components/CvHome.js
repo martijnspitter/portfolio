@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 
 import Header from './Header';
 import Footer from './Footer';
-import Popup from './Popup';
 import Cards from './Cards';
 import About from './About';
 import Skills from './Skills';
 import Cv from './Cv';
 import SectionNew from './SectionNew';
+import Contact from './Contact';
 
 //import Contact from './components/Contact';
 
@@ -53,7 +53,6 @@ export default class CvHome extends Component {
 	render() {
 		return (
 			<div className="cv-container">
-				<Popup />
 				<Header hidden={this.state.hidden} />
 
 				<div className="content-container">
@@ -62,7 +61,7 @@ export default class CvHome extends Component {
 					<Skills />
 					<Cards />
 					<Cv />
-
+					<Contact />
 					<Footer />
 				</div>
 			</div>

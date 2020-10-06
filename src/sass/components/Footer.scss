@@ -42,43 +42,11 @@
 	}
 }
 
-.contact {
-	max-width: 50rem;
-	margin: 0 3rem;
-
-	&__text {
-		margin-bottom: 1rem;
-	}
-
-	&__text a {
-		text-decoration: none;
-		color: var(--color-tertiary-dark);
-	}
-
-	&__logos {
-		&--linkedin {
-			height: 3rem;
-			width: 3rem;
-		}
-
-		&--github {
-			height: 5rem;
-			width: 5rem;
-		}
-	}
-
-	@media only screen and (max-width: 68.75em) {
-		margin-bottom: 3rem;
-	}
-}
-
 .disclaimer {
-	text-align: right;
 	max-width: 50rem;
 	margin: 0 3rem;
 
 	@media only screen and (max-width: 68.75em) {
-		text-align: left;
 		margin-bottom: 6rem;
 	}
 }

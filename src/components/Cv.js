@@ -63,7 +63,7 @@ export default class cv extends Component {
 							</div>
 							<div className="cv-row">
 								<div className="col-1-of-3">Communicatie, Beleid en Management</div>
-								<div className="col-2-of-3">09-2009 - 06-20010</div>
+								<div className="col-2-of-3">09-2009 - 06-2010</div>
 								<div className="col-2-of-3">Universiteit Utrecht</div>
 							</div>
 
