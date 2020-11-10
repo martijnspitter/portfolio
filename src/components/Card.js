@@ -162,7 +162,8 @@ class Card extends Component {
 					<div className="cvcard__cta">
 						<div className="cvcard__price-box">{this.props.backtext}</div>
 						<button
-							className="cvbtn cvbtn--white"
+							className="cvbtn cvbtn--white cvcard__btn"
+							style={{ width: '20rem', alignSelf: 'center', marginBottom: '4rem', color: '#333' }}
 							onClick={() => {
 								this.setState({ show: true });
 							}}

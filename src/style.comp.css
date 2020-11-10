@@ -246,11 +246,11 @@ _:future,
     .cvcard__side--back {
       transform: rotateY(180deg); }
       .cvcard__side--back-1 {
-        background-image: linear-gradient(to right bottom, rgba(246, 174, 45, 0.6), var(--yellow)); }
+        background-image: linear-gradient(to right bottom, rgba(246, 174, 45, 0.3), rgba(246, 174, 45, 0.85)); }
       .cvcard__side--back-2 {
-        background-image: linear-gradient(to right bottom, rgba(242, 100, 25, 0.6), var(--orange)); }
+        background-image: linear-gradient(to right bottom, rgba(242, 100, 25, 0.3), rgba(242, 100, 25, 0.85)); }
       .cvcard__side--back-3 {
-        background-image: linear-gradient(to right bottom, rgba(146, 220, 229, 0.6), var(--light-blue)); }
+        background-image: linear-gradient(to right bottom, rgba(146, 220, 229, 0.3), rgba(146, 220, 229, 0.85)); }
   .cvcard:hover .cvcard__side--front {
     transform: rotateY(-180deg); }
   .cvcard:hover .cvcard__side--back {
@@ -282,13 +282,14 @@ _:future,
   .cvcard__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
-    box-decoration-break: clone; }
+    box-decoration-break: clone;
+    border-radius: 3px; }
     .cvcard__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(246, 174, 45, 0.6), rgba(246, 174, 45, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(246, 174, 45, 0.6), #f6ae2d); }
     .cvcard__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(242, 100, 25, 0.6), rgba(242, 100, 25, 0.85)); }
+      background-image: linear-gradient(to right bottom, rgba(242, 100, 25, 0.6), #f26419); }
     .cvcard__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(146, 220, 229, 0.8), #92dce5); }
+      background-image: linear-gradient(to right bottom, rgba(146, 220, 229, 0.6), #92dce5); }
   .cvcard__details {
     padding: 3rem; }
     .cvcard__details ul {
@@ -305,11 +306,18 @@ _:future,
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    text-align: center; }
+    height: 50rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
   .cvcard__price-box {
     text-align: center;
-    margin-bottom: 8rem;
-    color: var(--color-grey-light-1); }
+    height: 35rem;
+    padding: 2rem 1rem;
+    border-radius: 3px;
+    color: var(--color-grey-dark-1);
+    margin: auto 0; }
   .cvcard__price-only {
     font-size: 1.4;
     text-transform: uppercase; }
@@ -331,6 +339,14 @@ _:future,
           transform: rotateY(0);
           -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      .cvcard__cta {
+        height: 35rem; }
+      .cvcard__price-box {
+        text-align: center;
+        padding: 2rem 1rem;
+        border-radius: 3px;
+        color: var(--color-grey-dark-2);
+        margin: 6rem 4rem; }
       .cvcard:hover .cvcard__side--front {
         transform: rotateY(0); }
       .cvcard__details {
@@ -371,11 +387,28 @@ _:future,
         left: 0%;
         transform: translate(0);
         width: 100%;
-        padding: 3rem 2rem; }
+        height: 30rem; }
       .cvcard__price-box {
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        text-align: center;
+        padding: 3rem 1rem;
+        border-radius: 3px;
+        color: var(--color-grey-dark-2);
+        margin: 4rem 2rem 0rem 2rem;
+        font-size: 1.6rem; }
       .cvcard__price-value {
         font-size: 6rem; } }
+  @media only screen and (max-width: 22.19em) {
+    .cvcard {
+      width: 95%;
+      margin: 3rem 0; }
+      .cvcard__cta {
+        height: 100%; }
+      .cvcard__price-box {
+        padding: 3rem 1rem;
+        height: 100%; }
+      .cvcard__btn {
+        width: 75%; } }
 
 .rsc-header h2 {
   margin: 0 !important;
@@ -470,7 +503,7 @@ _:future,
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%); } }
-    @media only screen and (max-width: 326px) {
+    @media only screen and (max-width: 20.375) {
       .menu__dropdown {
         top: 3.2rem;
         left: 50%;

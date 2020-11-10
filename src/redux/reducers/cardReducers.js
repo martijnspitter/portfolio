@@ -13,7 +13,7 @@ export const cardsReducer = () => {
 			appLink: 'http://martijnspitter.nl/issuetracker',
 			text:
 				'This was the first major project I took upon myself to create. It helped me learn about Redux, database design and api development. I use this IssueTracker on all my projects since its creation.',
-			backtext: 'Learning Redux state management'
+			backtext: 'Fully functional IssueTracker which I use myself on all my projects'
 		},
 		{
 			id: 2,
@@ -28,7 +28,8 @@ export const cardsReducer = () => {
 			appLink: 'http://digitalgarden.martijnspitter.nl/',
 			text:
 				'This web application was created when I heared of Digital Gardens at a online React seminair. This site was built specifically to experiment with Recoil and to create a space to .',
-			backtext: 'Learning Recoil state management'
+			backtext:
+				'An open collection of notes, resources and thoughts on various topics intended to aid me as I learn new technologies'
 		},
 
 		{
@@ -44,7 +45,8 @@ export const cardsReducer = () => {
 			appLink: 'http://notes.martijnspitter.nl/',
 			text:
 				'This web application was created to learn more about GraphQL. It allows drilling deep into the data with each query which makes retrieving data easy. It features a MongoDB (a semi non-relational database) with object orientated data structures.',
-			backtext: 'Learning GraphQL and MongoDB'
+			backtext:
+				'A todo tracker in the style of Trello with drag and drop functionality to better visualize the work that still needs doing'
 		}
 	];
 };
