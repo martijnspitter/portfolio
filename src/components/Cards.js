@@ -22,7 +22,8 @@ class Cards extends Component {
 									line3={card.line3}
 									line4={card.line4}
 									line5={card.line5}
-									btnsource={card.btnsource}
+									githubLink={card.githubLink}
+									appLink={card.appLink}
 									text={card.text}
 									backtext={card.backtext}
 								/>

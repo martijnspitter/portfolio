@@ -3,86 +3,48 @@ export const cardsReducer = () => {
 		{
 			id: 1,
 			number: '1',
-			title: "The 'Trillo' project",
-			line1: 'CSS',
-			line2: 'CSS flexbox',
-			line3: 'SASS',
-			line4: '',
+			title: 'IssueTracker',
+			line1: 'Redux state',
+			line2: 'Express server',
+			line3: 'MySQL database',
+			line4: 'Bootstrap styling',
 			line5: '',
-			btnsource: 'https://github.com/martijnspitter/trillo',
+			githubLink: 'https://github.com/martijnspitter/issuetracker',
+			appLink: 'http://martijnspitter.nl/issuetracker',
 			text:
-				'This site was created as part of an advanced CSS course on Udemy. This site specifically was built to experiment with flexbox and has some small animations and a couple of svg elements.',
-			backtext: 'Learning CSS with flexbox'
+				'This was the first major project I took upon myself to create. It helped me learn about Redux, database design and api development. I use this IssueTracker on all my projects since its creation.',
+			backtext: 'Learning Redux state management'
 		},
 		{
 			id: 2,
 			number: '2',
-			title: "The 'Jammming' Project",
-			line1: 'ReactJS',
-			line2: 'CSS',
-			line3: 'Spotify API',
-			line4: '',
+			title: 'Digital Garden',
+			line1: 'Recoil state',
+			line2: 'Express server',
+			line3: 'MySQL database',
+			line4: 'Bootstrap styling',
 			line5: '',
-			btnsource: 'https://github.com/martijnspitter/jammming',
+			githubLink: 'https://github.com/martijnspitter/digitalgarden',
+			appLink: 'http://digitalgarden.martijnspitter.nl/',
 			text:
-				'This website was created as part of the Codecademy React course. Here we explore the possibilities of React and the Yelp API using asynchronous requests. Extra functionality that would need to be built in before going live is; retention of search results upon login and confirmation upon save.',
-			backtext: 'Exploring React with the Yelp API'
+				'This web application was created when I heared of Digital Gardens at a online React seminair. This site was built specifically to experiment with Recoil and to create a space to .',
+			backtext: 'Learning Recoil state management'
 		},
+
 		{
 			id: 3,
 			number: '3',
-			title: "The 'Streams' project",
-			line1: 'ReactJS',
-			line2: 'Redux',
-			line3: 'Axios',
-			line4: 'React-Router',
-			line5: 'rtmp and json server',
-			btnsource: 'https://github.com/martijnspitter/streams',
+			title: 'Notes',
+			line1: 'Recoil state',
+			line2: 'Express server',
+			line3: 'MongoDB database',
+			line4: 'GraphQL queries',
+			line5: 'Bootstrap styling',
+			githubLink: 'https://github.com/martijnspitter/notesFrontend',
+			appLink: 'http://notes.martijnspitter.nl/',
 			text:
-				'This website was created as part of an Advanced React course on Udemy. With it we explore Redux, React-Router and Axios. We created a json and rtmp server to host streams and data about the streams.',
-			backtext: 'Exploring React, Redux, Axios and React-Router'
-		},
-		{
-			id: 4,
-			number: '1',
-			title: "The 'Ravenous' project",
-			line1: 'ReactJS',
-			line2: 'CSS',
-			line3: 'Yelp API',
-			line4: '',
-			line5: '',
-			btnsource: 'https://github.com/martijnspitter/ravenous',
-			text:
-				'This website was created as part of the React course on Codecademy. With it we explore the possibilities of React and make asynchronous requests of the Yelp API. We would need to add error handling before going live.',
-			backtext: 'Exploring React with the Yelp API'
-		},
-		{
-			id: 5,
-			number: '2',
-			title: "The 'Natours' project",
-			line1: 'CSS',
-			line2: 'CSS grids',
-			line3: 'CSS animations',
-			line4: 'SASS',
-			line5: '',
-			btnsource: 'https://github.com/martijnspitter/natours',
-			text:
-				'This website was created as part of an Advanced CSS course on Udemy. With it we explore CSS using a grid layout and we create lots of animations. It also served as an introduction in SASS',
-			backtext: 'Exploring CSS using grids and creating animations'
-		},
-		{
-			id: 6,
-			number: '3',
-			title: "The 'Videos' project",
-			line1: 'ReactJS',
-			line2: 'Axios',
-			line3: 'YouTube API',
-			line4: '',
-			line5: '',
-			btnsource: 'https://github.com/martijnspitter/videos',
-			text:
-				'This website was created as part of an Advanced React course on Udemy. With it we explore the possibilities of Axios making requests of the YouTube API',
-			backtext: 'Exploring React and Axios using the Youtube API'
+				'This web application was created to learn more about GraphQL. It allows drilling deep into the data with each query which makes retrieving data easy. It features a MongoDB (a semi non-relational database) with object orientated data structures.',
+			backtext: 'Learning GraphQL and MongoDB'
 		}
 	];
 };

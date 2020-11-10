@@ -27,10 +27,18 @@ class App extends Component {
 				<Switch>
 					<Route path="/" exact component={CvHome} />
 					<Route
-						path={`/external`}
+						path={`/dg`}
 						exact
 						component={() => {
 							window.location = 'http://digitalgarden.martijnspitter.nl';
+							return null;
+						}}
+					/>
+					<Route
+						path={`/notes`}
+						exact
+						component={() => {
+							window.location = 'http://notes.martijnspitter.nl';
 							return null;
 						}}
 					/>

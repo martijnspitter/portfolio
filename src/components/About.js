@@ -22,10 +22,10 @@ class About extends Component {
 								</p>
 								<br />
 								<p className="about__p">
-									To be able to change careers I started with the front-end courses on Codecademy and Freecodecamp. I
-									then took specialised courses on Udemy and edX in CSS, JavaScript, ReactJS and Redux and now have an
-									extensive understanding of these subjects. Along the way I also picked up some knowledge on MySQL and
-									NodeJS / Express.
+									In order to change careers I started with the front-end courses on Codecademy and Freecodecamp. I then
+									took specialised courses on Udemy and edX in CSS, JavaScript and ReactJS and now I have an excellent
+									understanding of these subjects. Along the way I also learned and worked with Recoil, Bootstrap,
+									GraphQL, SQL, MySQL, MongoDB and NodeJS / Express.
 								</p>
 							</div>
 						</div>

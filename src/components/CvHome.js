@@ -6,10 +6,9 @@ import Cards from './Cards';
 import About from './About';
 import Skills from './Skills';
 import Cv from './Cv';
-import SectionNew from './SectionNew';
-import Contact from './Contact';
 
-//import Contact from './components/Contact';
+import Contact from './Contact';
+import CustomChatBot from './CustomChatBot';
 
 export default class CvHome extends Component {
 	constructor(props) {
@@ -19,6 +18,10 @@ export default class CvHome extends Component {
 		this.handleScroll = this.handleScroll.bind(this);
 
 		this.state = { hidden: false, lastScrollTop: 0 };
+	}
+
+	clickEventHandler(click) {
+		return (window.location = click);
 	}
 
 	componentDidMount() {
@@ -57,12 +60,13 @@ export default class CvHome extends Component {
 
 				<div className="content-container">
 					<About />
-					<SectionNew />
+
 					<Skills />
 					<Cards />
 					<Cv />
 					<Contact />
 					<Footer />
+					<CustomChatBot eventHandler={this.clickEventHandler} />
 				</div>
 			</div>
 		);

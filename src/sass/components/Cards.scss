@@ -70,13 +70,13 @@ _:future,
 			transform: rotateY(180deg);
 
 			&-1 {
-				background-image: linear-gradient(to right bottom, rgba($yellow, .3), var(--yellow));
+				background-image: linear-gradient(to right bottom, rgba($yellow, .6), var(--yellow));
 			}
 			&-2 {
-				background-image: linear-gradient(to right bottom, rgba($light-blue, .3), var(--light-blue));
+				background-image: linear-gradient(to right bottom, rgba($orange, .6), var(--orange));
 			}
 			&-3 {
-				background-image: linear-gradient(to right bottom, rgba($orange, .3), var(--orange));
+				background-image: linear-gradient(to right bottom, rgba($light-blue, .6), var(--light-blue));
 			}
 		}
 	}
@@ -100,16 +100,16 @@ _:future,
 		border-top-right-radius: 3px;
 
 		&--1 {
-			background-image: linear-gradient(to right bottom, rgba($yellow, .3), var(--yellow)), url(images/webdev.jpg);
+			background-image: linear-gradient(to left bottom, rgba($yellow, .3), rgba($yellow, 1)), url(images/IT2.png);
 		}
 
 		&--2 {
-			background-image: linear-gradient(to right bottom, rgba($light-blue, .3), var(--light-blue)),
-				url(images/webdev.jpg);
+			background-image: linear-gradient(to left bottom, rgba($orange, .3), rgba($orange, .6)), url(images/dg1.png);
 		}
 
 		&--3 {
-			background-image: linear-gradient(to right bottom, rgba($orange, .3), var(--orange)), url(images/webdev.jpg);
+			background-image: linear-gradient(to left bottom, rgba($light-blue, .3), rgba($light-blue, .6)),
+				url(images/N1.png);
 		}
 	}
 	&__heading {
@@ -129,13 +129,13 @@ _:future,
 		-webkit-box-decoration-break: clone;
 		box-decoration-break: clone;
 		&--1 {
-			background-image: linear-gradient(to right bottom, rgba($yellow, .3), rgba($yellow, .85));
+			background-image: linear-gradient(to right bottom, rgba($yellow, .6), rgba($yellow, .85));
 		}
 		&--2 {
-			background-image: linear-gradient(to right bottom, rgba($light-blue, .3), rgba($light-blue, .85));
+			background-image: linear-gradient(to right bottom, rgba($orange, .6), rgba($orange, .85));
 		}
 		&--3 {
-			background-image: linear-gradient(to right bottom, rgba($orange, .3), rgba($orange, .85));
+			background-image: linear-gradient(to right bottom, rgba($light-blue, .8), rgba($light-blue, 1));
 		}
 	}
 

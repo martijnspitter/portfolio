@@ -10,7 +10,7 @@ class Header extends Component {
 					<a href="#about" style={{ cursor: 'default' }}>
 						<img src={logo} className="header__logo" alt="logo" />
 					</a>
-					<MenuHeader />
+					<MenuHeader hidden={this.props.hidden} />
 				</header>
 			);
 		} else {
@@ -19,7 +19,7 @@ class Header extends Component {
 					<a href="#about" style={{ cursor: 'default' }}>
 						<img src={logo} className="header__logo" alt="logo" style={{ cursor: 'pointer' }} />
 					</a>
-					<MenuHeader />
+					<MenuHeader hidden={this.props.hidden} />
 					<div className="header__empty">&nbsp;</div>
 				</header>
 			);
